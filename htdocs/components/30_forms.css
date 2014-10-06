@@ -1,0 +1,5 @@
+.ftext {
+  border: [[PANEL_BORDER]] solid 1px;
+  width: auto;
+  margin-bottom: 3px;
+}

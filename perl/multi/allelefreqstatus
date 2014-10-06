@@ -1,0 +1,37 @@
+use strict;
+use CGI qw(standard escape escapeHTML unescape header);
+use EnsEMBL::Web::RegObj;
+use EnsEMBL::Web::SpeciesDefs;
+
+use Data::Dumper;
+
+use vars qw( $species_defs);
+BEGIN {
+  $species_defs = $EnsEMBL::Web::RegObj::ENSEMBL_WEB_REGISTRY->species_defs;
+}
+
+my $cgi = new CGI();
+my $job = $cgi->param('name');
+
+my $fname = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/download'."/$job";
+
+my $status = 'RUNNING';
+my $progress = 0;
+
+my @time = localtime(time);
+$progress = $time[0];
+
+if (-e $fname) {
+$status = 'COMPLETE';
+ $progress = 100 if ($status =~ /RESULTS|COMPLETE/);
+}
+#else {
+#}
+
+print $cgi->header(-type => 'application/json');
+print sprintf qq{ \{ "job": \"%s\", "status": \"%s\", "progress": %d, "count": %d \} }, 
+$job, $status, $progress, 50;
+
+warn "STATUS : $job * $status * $progress\n";
+
+return;

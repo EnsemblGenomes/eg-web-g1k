@@ -1,0 +1,3439 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='/net/isilonP/public/rw/ensembl/libs/R/rCharts/libraries/dimple/js/dimple.v1.js' type='text/javascript'></script>
+    <script src='/net/isilonP/public/rw/ensembl/libs/R/rCharts/libraries/dimple/js/d3.v3.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 2000px;
+      height: 1500px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chartaeb458ec70' class='rChart dimple'></div>  
+    
+    <script type="text/javascript">
+  var opts = {
+ "dom": "chartaeb458ec70",
+"width":   2000,
+"height":   1500,
+"x": [ "Cell", "Tissue", "SNPs", "Number", "Accession", "Pvalue", "Zscore" ],
+"y": "Pvalue",
+"groups": "Class",
+"type": "bubble",
+"bounds": {
+ "x":     90,
+"y":     50,
+"height":    600,
+"width":   1850 
+},
+"id": "chartaeb458ec70",
+"title": "forge/1kYz/1409932931 overlaps with erc DHS" 
+},
+    data = [
+ {
+ "Zscore": -1.281,
+"Pvalue":      0,
+"Cell": "CD3",
+"Tissue": "Blood",
+"File": "UW.CD3_Primary_Cells.ChromatinAccessibility.CB1_1-3-2011.DS17702.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 1,
+"Accession": "GSM701525",
+"Class": 1 
+},
+{
+ "Zscore":  0.152,
+"Pvalue": 0.26852,
+"Cell": "CD3",
+"Tissue": "Blood",
+"File": "UW.CD3_Primary_Cells.ChromatinAccessibility.CB6_1-4-2011.DS17706.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2277027,rs3820928",
+"Number": 2,
+"Accession": "GSM701526",
+"Class": 1 
+},
+{
+ "Zscore": -1.289,
+"Pvalue": 4.8216e-17,
+"Cell": "CD3",
+"Tissue": "Blood",
+"File": "UW.CD3_Primary_Cells.ChromatinAccessibility.RO_01679.DS17198.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 3,
+"Accession": "GSM665837",
+"Class": 1 
+},
+{
+ "Zscore": -1.081,
+"Pvalue": 0.033074,
+"Cell": "CD3",
+"Tissue": "Blood",
+"File": "UW.CD3_Primary_Cells.ChromatinAccessibility.RO_01701.DS17534.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs6903823",
+"Number": 4,
+"Accession": "GSM701516",
+"Class": 1 
+},
+{
+ "Zscore": -0.317,
+"Pvalue": 0.14445,
+"Cell": "CD4_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD4_Primary_Cells.ChromatinAccessibility.RO_01679.DS16955.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs6903823",
+"Number": 5,
+"Accession": "GSM701489",
+"Class": 1 
+},
+{
+ "Zscore": -0.805,
+"Pvalue": 0.048149,
+"Cell": "CD4_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD4_Primary_Cells.ChromatinAccessibility.RO_01701.DS17175.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12447804",
+"Number": 6,
+"Accession": "GSM701491",
+"Class": 1 
+},
+{
+ "Zscore": -0.914,
+"Pvalue": 0.044062,
+"Cell": "CD4",
+"Tissue": "Blood",
+"File": "UW.CD4_Primary_Cells.ChromatinAccessibility.RO_01549.DS15947.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267",
+"Number": 7,
+"Accession": "GSM665812",
+"Class": 1 
+},
+{
+ "Zscore": -0.707,
+"Pvalue": 0.065849,
+"Cell": "CD4",
+"Tissue": "Blood",
+"File": "UW.CD4_Primary_Cells.ChromatinAccessibility.RO_01679.DS17212.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267",
+"Number": 8,
+"Accession": "GSM665839",
+"Class": 1 
+},
+{
+ "Zscore": -0.401,
+"Pvalue": 0.12645,
+"Cell": "CD4",
+"Tissue": "Blood",
+"File": "UW.CD4_Primary_Cells.ChromatinAccessibility.RO_01689.DS17329.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2798641,rs6903823",
+"Number": 9,
+"Accession": "GSM817166",
+"Class": 1 
+},
+{
+ "Zscore": -0.504,
+"Pvalue": 0.092699,
+"Cell": "CD4",
+"Tissue": "Blood",
+"File": "UW.CD4_Primary_Cells.ChromatinAccessibility.RO_01701.DS17881.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267",
+"Number": 10,
+"Accession": "GSM701539",
+"Class": 1 
+},
+{
+ "Zscore": -0.893,
+"Pvalue": 0.042623,
+"Cell": "CD8_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD8_Primary_Cells.ChromatinAccessibility.RO_01679.DS16962.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2277027",
+"Number": 11,
+"Accession": "GSM817160",
+"Class": 1 
+},
+{
+ "Zscore": -1.783,
+"Pvalue": 4.343e-11,
+"Cell": "CD8",
+"Tissue": "Blood",
+"File": "UW.CD8_Primary_Cells.ChromatinAccessibility.RO_01549.DS16012.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 12,
+"Accession": "GSM665813",
+"Class": 1 
+},
+{
+ "Zscore":  -1.28,
+"Pvalue": 4.8216e-17,
+"Cell": "CD8",
+"Tissue": "Blood",
+"File": "UW.CD8_Primary_Cells.ChromatinAccessibility.RO_01679.DS17203.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 13,
+"Accession": "GSM665838",
+"Class": 1 
+},
+{
+ "Zscore": -1.537,
+"Pvalue": 4.3429e-11,
+"Cell": "CD8",
+"Tissue": "Blood",
+"File": "UW.CD8_Primary_Cells.ChromatinAccessibility.RO_01689.DS17332.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 14,
+"Accession": "GSM701499",
+"Class": 1 
+},
+{
+ "Zscore": -1.346,
+"Pvalue": 4.8216e-17,
+"Cell": "CD8",
+"Tissue": "Blood",
+"File": "UW.CD8_Primary_Cells.ChromatinAccessibility.RO_01701.DS17885.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 15,
+"Accession": "GSM701540",
+"Class": 1 
+},
+{
+ "Zscore": -0.479,
+"Pvalue": 0.09709,
+"Cell": "CD14",
+"Tissue": "Blood",
+"File": "UW.CD14_Primary_Cells.ChromatinAccessibility.RO_01689.DS17391.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267",
+"Number": 16,
+"Accession": "GSM701503",
+"Class": 1 
+},
+{
+ "Zscore":   0.35,
+"Pvalue": 0.32925,
+"Cell": "CD14",
+"Tissue": "Blood",
+"File": "UW.CD14_Primary_Cells.ChromatinAccessibility.RO_01701.DS17889.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267,rs6903823",
+"Number": 17,
+"Accession": "GSM701541",
+"Class": 1 
+},
+{
+ "Zscore": -0.176,
+"Pvalue": 0.17726,
+"Cell": "CD19",
+"Tissue": "Blood",
+"File": "UW.CD19_Primary_Cells.ChromatinAccessibility.RO_01679.DS17186.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2838815,rs3820928",
+"Number": 18,
+"Accession": "GSM701492",
+"Class": 1 
+},
+{
+ "Zscore": -0.741,
+"Pvalue": 0.05263,
+"Cell": "CD19",
+"Tissue": "Blood",
+"File": "UW.CD19_Primary_Cells.ChromatinAccessibility.RO_01689.DS17281.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2277027",
+"Number": 19,
+"Accession": "GSM701493",
+"Class": 1 
+},
+{
+ "Zscore":  0.627,
+"Pvalue": 0.43469,
+"Cell": "CD19",
+"Tissue": "Blood",
+"File": "UW.CD19_Primary_Cells.ChromatinAccessibility.RO_01701.DS17440.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2277027,rs2838815,rs3820928",
+"Number": 20,
+"Accession": "GSM701507",
+"Class": 1 
+},
+{
+ "Zscore":  2.529,
+"Pvalue": 1.4075,
+"Cell": "CD20",
+"Tissue": "Blood",
+"File": "UW.CD20_Primary_Cells.ChromatinAccessibility.RO_01778.DS17371.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs3820928,rs4129267,rs7068966",
+"Number": 21,
+"Accession": "GSM701500",
+"Class": 1 
+},
+{
+ "Zscore": -0.748,
+"Pvalue": 0.068887,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_00738.DS13199.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs6903823",
+"Number": 22,
+"Accession": "GSM530664",
+"Class": 1 
+},
+{
+ "Zscore": -0.687,
+"Pvalue": 0.068115,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01480.DS12771.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 23,
+"Accession": "GSM530658",
+"Class": 1 
+},
+{
+ "Zscore":  0.179,
+"Pvalue": 0.27349,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01492.DS12774.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs6903823",
+"Number": 24,
+"Accession": "GSM530659",
+"Class": 1 
+},
+{
+ "Zscore":  0.029,
+"Pvalue": 0.23001,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01492.DS14206.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs6903823",
+"Number": 25,
+"Accession": "GSM595919",
+"Class": 1 
+},
+{
+ "Zscore": -0.786,
+"Pvalue": 0.059514,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01508.DS11202.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs6903823",
+"Number": 26,
+"Accession": "GSM493386",
+"Class": 1 
+},
+{
+ "Zscore": -0.583,
+"Pvalue": 0.075427,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01517.DS14129.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267",
+"Number": 27,
+"Accession": "GSM595917",
+"Class": 1 
+},
+{
+ "Zscore": -0.683,
+"Pvalue": 0.062949,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01520.DS12785.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 28,
+"Accession": "GSM530660",
+"Class": 1 
+},
+{
+ "Zscore": -1.354,
+"Pvalue": 4.3429e-11,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01527.DS11666.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 29,
+"Accession": "GSM493387",
+"Class": 1 
+},
+{
+ "Zscore": -0.687,
+"Pvalue": 0.068115,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01535.DS12274.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 30,
+"Accession": "GSM493384",
+"Class": 1 
+},
+{
+ "Zscore": -1.565,
+"Pvalue": 4.3429e-11,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01535.DS14197.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 31,
+"Accession": "GSM595918",
+"Class": 1 
+},
+{
+ "Zscore":  0.066,
+"Pvalue": 0.2385,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01536.DS12339.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12716852,rs4129267",
+"Number": 32,
+"Accession": "GSM530652",
+"Class": 1 
+},
+{
+ "Zscore": -0.885,
+"Pvalue": 0.040778,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01549.DS12734.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 33,
+"Accession": "GSM530657",
+"Class": 1 
+},
+{
+ "Zscore": -1.507,
+"Pvalue": 8.6859e-11,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01562.DS13196.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 34,
+"Accession": "GSM530663",
+"Class": 1 
+},
+{
+ "Zscore": -1.673,
+"Pvalue":      0,
+"Cell": "CD34_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD34_Primary_Cells.ChromatinAccessibility.RO_01701.DS17112.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 35,
+"Accession": "GSM774208",
+"Class": 1 
+},
+{
+ "Zscore": -1.074,
+"Pvalue": 0.036119,
+"Cell": "CD56_Mobilised",
+"Tissue": "Blood",
+"File": "UW.Mobilized_CD56_Primary_Cells.ChromatinAccessibility.RO_01689.DS16376.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12716852",
+"Number": 36,
+"Accession": "GSM665820",
+"Class": 1 
+},
+{
+ "Zscore": -1.213,
+"Pvalue": 4.8216e-17,
+"Cell": "CD56",
+"Tissue": "Blood",
+"File": "UW.CD56_Primary_Cells.ChromatinAccessibility.RO_01679.DS17189.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 37,
+"Accession": "GSM665836",
+"Class": 1 
+},
+{
+ "Zscore": -1.421,
+"Pvalue": 8.6859e-11,
+"Cell": "CD56",
+"Tissue": "Blood",
+"File": "UW.CD56_Primary_Cells.ChromatinAccessibility.RO_01701.DS17443.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 38,
+"Accession": "GSM701508",
+"Class": 1 
+},
+{
+ "Zscore":  2.849,
+"Pvalue": 1.7707,
+"Cell": "Breast_vHMEC",
+"Tissue": "Breast",
+"File": "UW.Breast_vHMEC.ChromatinAccessibility.RM035.DS18406.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2798641,rs4129267,rs6903823,rs993925,rs9978142",
+"Number": 39,
+"Accession": "GSM753973",
+"Class": 1 
+},
+{
+ "Zscore":  3.022,
+"Pvalue": 1.6982,
+"Cell": "Breast_vHMEC",
+"Tissue": "Breast",
+"File": "UW.Breast_vHMEC.ChromatinAccessibility.RM035.DS18438.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1036429,rs10516526,rs3817928,rs4129267,rs6903823,rs9978142",
+"Number": 40,
+"Accession": "GSM753974",
+"Class": 1 
+},
+{
+ "Zscore":  -0.06,
+"Pvalue": 0.2183,
+"Cell": "H1",
+"Tissue": "ES Cell",
+"File": "UW.H1.ChromatinAccessibility.DS18873.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 41,
+"Accession": "GSM878616",
+"Class": 1 
+},
+{
+ "Zscore": -0.554,
+"Pvalue": 0.08552,
+"Cell": "H1",
+"Tissue": "ES Cell",
+"File": "UW.H1.ChromatinAccessibility.DS19100.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 42,
+"Accession": "GSM878621",
+"Class": 1 
+},
+{
+ "Zscore": -0.355,
+"Pvalue": 0.14186,
+"Cell": "H9",
+"Tissue": "ES Cell",
+"File": "UW.H9.ChromatinAccessibility.DS18517.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 43,
+"Accession": "GSM878612",
+"Class": 1 
+},
+{
+ "Zscore":  1.129,
+"Pvalue": 0.62498,
+"Cell": "H9",
+"Tissue": "ES Cell",
+"File": "UW.H9.ChromatinAccessibility.DS18522.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746,rs4129267",
+"Number": 44,
+"Accession": "GSM878613",
+"Class": 1 
+},
+{
+ "Zscore":  3.501,
+"Pvalue": 2.2272,
+"Cell": "Mesenchymal_Stem_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_Derived_Mesenchymal_Stem_Cells.ChromatinAccessibility.DS20671.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 45,
+"Accession": "GSM906380",
+"Class": 1 
+},
+{
+ "Zscore":   2.04,
+"Pvalue": 1.2531,
+"Cell": "Mesenchymal_Stem_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_Derived_Mesenchymal_Stem_Cells.ChromatinAccessibility.DS21042.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 46,
+"Accession": "GSM906381",
+"Class": 1 
+},
+{
+ "Zscore": -0.417,
+"Pvalue": 0.13335,
+"Cell": "Mesendoderm_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_BMP4_Derived_Mesendoderm_Cultured_Cells.ChromatinAccessibility.DS18732.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs4129267",
+"Number": 47,
+"Accession": "GSM817198",
+"Class": 1 
+},
+{
+ "Zscore":  0.906,
+"Pvalue": 0.61314,
+"Cell": "Mesendoderm_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_BMP4_Derived_Mesendoderm_Cultured_Cells.ChromatinAccessibility.DS19310.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1551943,rs2284746,rs4129267",
+"Number": 48,
+"Accession": "GSM817215",
+"Class": 1 
+},
+{
+ "Zscore":  0.474,
+"Pvalue": 0.39442,
+"Cell": "Neuronal_Progenitor_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_Derived_Neuronal_Progenitor_Cultured_Cells.ChromatinAccessibility.DS18739.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12716852,rs2284746",
+"Number": 49,
+"Accession": "GSM878615",
+"Class": 1 
+},
+{
+ "Zscore": -0.384,
+"Pvalue": 0.13101,
+"Cell": "Neuronal_Progenitor_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_Derived_Neuronal_Progenitor_Cultured_Cells.ChromatinAccessibility.DS20153.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746",
+"Number": 50,
+"Accession": "GSM906379",
+"Class": 1 
+},
+{
+ "Zscore":   2.45,
+"Pvalue": 1.6043,
+"Cell": "Trophoblast_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_BMP4_Derived_Trophoblast_Cultured_Cells.ChromatinAccessibility.DS18736.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs1344555,rs1551943,rs1928168,rs3734729",
+"Number": 51,
+"Accession": "GSM878614",
+"Class": 1 
+},
+{
+ "Zscore":  2.569,
+"Pvalue": 1.6293,
+"Cell": "Trophoblast_Cultured_Cells",
+"Tissue": "ES Cell",
+"File": "UW.H1_BMP4_Derived_Trophoblast_Cultured_Cells.ChromatinAccessibility.DS19317.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs1529672,rs1551943,rs2284746,rs3734729",
+"Number": 52,
+"Accession": "GSM878628",
+"Class": 1 
+},
+{
+ "Zscore":  2.266,
+"Pvalue": 1.2346,
+"Cell": "Fetal_Adrenal_Gland",
+"Tissue": "Fetal Adrenal",
+"File": "UW.Fetal_Adrenal_Gland.ChromatinAccessibility.H-22662.DS12528.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs2284746,rs2798641,rs3817928,rs6903823",
+"Number": 53,
+"Accession": "GSM530653",
+"Class": 1 
+},
+{
+ "Zscore":  1.447,
+"Pvalue": 0.80853,
+"Cell": "Fetal_Adrenal_Gland",
+"Tissue": "Fetal Adrenal",
+"File": "UW.Fetal_Adrenal_Gland.ChromatinAccessibility.H-23769.DS17319.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2798641,rs2838815,rs6903823",
+"Number": 54,
+"Accession": "GSM817165",
+"Class": 1 
+},
+{
+ "Zscore":  0.079,
+"Pvalue": 0.2549,
+"Cell": "Fetal_Adrenal_Gland",
+"Tissue": "Fetal Adrenal",
+"File": "UW.Fetal_Adrenal_Gland.ChromatinAccessibility.H-24409.DS20343.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2798641,rs3817928",
+"Number": 55,
+"Accession": "GSM878658",
+"Class": 1 
+},
+{
+ "Zscore":      0,
+"Pvalue": 0.22184,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-22510.DS11872.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641",
+"Number": 56,
+"Accession": "GSM530651",
+"Class": 1 
+},
+{
+ "Zscore": -0.802,
+"Pvalue": 0.055033,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-22510.DS11877.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2798641",
+"Number": 57,
+"Accession": "GSM595913",
+"Class": 1 
+},
+{
+ "Zscore":  0.608,
+"Pvalue": 0.44126,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-22911.DS14464.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 58,
+"Accession": "GSM595920",
+"Class": 1 
+},
+{
+ "Zscore": -0.039,
+"Pvalue": 0.22319,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23266.DS14717.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2798641,rs9978142",
+"Number": 59,
+"Accession": "GSM595922",
+"Class": 1 
+},
+{
+ "Zscore":  -0.59,
+"Pvalue": 0.096062,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23266.DS14718.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs4129267",
+"Number": 60,
+"Accession": "GSM595923",
+"Class": 1 
+},
+{
+ "Zscore":    0.5,
+"Pvalue": 0.38001,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23284.DS14803.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 61,
+"Accession": "GSM595926",
+"Class": 1 
+},
+{
+ "Zscore":  0.529,
+"Pvalue": 0.41559,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23284.DS14815.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 62,
+"Accession": "GSM595928",
+"Class": 1 
+},
+{
+ "Zscore":  0.991,
+"Pvalue": 0.61983,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23399.DS15453.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1529672,rs2798641,rs4129267,rs9978142",
+"Number": 63,
+"Accession": "GSM665804",
+"Class": 1 
+},
+{
+ "Zscore":  -0.19,
+"Pvalue": 0.18414,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-23548.DS16302.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2798641",
+"Number": 64,
+"Accession": "GSM665819",
+"Class": 1 
+},
+{
+ "Zscore": -0.635,
+"Pvalue": 0.091893,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-24279.DS20221.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641",
+"Number": 65,
+"Accession": "GSM878650",
+"Class": 1 
+},
+{
+ "Zscore":  0.494,
+"Pvalue": 0.3915,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-24297.DS20226.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641",
+"Number": 66,
+"Accession": "GSM878651",
+"Class": 1 
+},
+{
+ "Zscore": -0.961,
+"Pvalue": 0.036924,
+"Cell": "Fetal_Brain",
+"Tissue": "Fetal Brain",
+"File": "UW.Fetal_Brain.ChromatinAccessibility.H-24381.DS20231.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2798641",
+"Number": 67,
+"Accession": "GSM878652",
+"Class": 1 
+},
+{
+ "Zscore":  2.435,
+"Pvalue": 1.4416,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-22662.DS12531.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs2798641,rs6903823,rs7068966,rs730532",
+"Number": 68,
+"Accession": "GSM530654",
+"Class": 1 
+},
+{
+ "Zscore":  1.347,
+"Pvalue": 0.87595,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-22727.DS12810.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 69,
+"Accession": "GSM530661",
+"Class": 1 
+},
+{
+ "Zscore":  1.652,
+"Pvalue": 1.0491,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23468.DS15839.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746,rs2798641,rs2838815,rs7068966,rs730532",
+"Number": 70,
+"Accession": "GSM665811",
+"Class": 1 
+},
+{
+ "Zscore":  0.885,
+"Pvalue": 0.58666,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23500.DS16018.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs6903823,rs7068966,rs730532",
+"Number": 71,
+"Accession": "GSM665814",
+"Class": 1 
+},
+{
+ "Zscore":  0.654,
+"Pvalue": 0.48911,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23524.DS16146.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 72,
+"Accession": "GSM665817",
+"Class": 1 
+},
+{
+ "Zscore":  1.385,
+"Pvalue": 0.87663,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23589.DS16500.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1529672,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 73,
+"Accession": "GSM665824",
+"Class": 1 
+},
+{
+ "Zscore":  1.512,
+"Pvalue": 0.89757,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23604.DS16582.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 74,
+"Accession": "GSM665830",
+"Class": 1 
+},
+{
+ "Zscore":  1.743,
+"Pvalue":  1.096,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23617.DS16621.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1529672,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 75,
+"Accession": "GSM665831",
+"Class": 1 
+},
+{
+ "Zscore":  1.404,
+"Pvalue": 0.88454,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23663.DS16819.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 76,
+"Accession": "GSM774203",
+"Class": 1 
+},
+{
+ "Zscore":  1.763,
+"Pvalue": 1.1703,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-23744.DS19431.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1529672,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 77,
+"Accession": "GSM817220",
+"Class": 1 
+},
+{
+ "Zscore":    1.3,
+"Pvalue": 0.87595,
+"Cell": "Fetal_Heart",
+"Tissue": "Fetal Heart",
+"File": "UW.Fetal_Heart.ChromatinAccessibility.H-24042.DS19427.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 78,
+"Accession": "GSM878630",
+"Class": 1 
+},
+{
+ "Zscore":  3.176,
+"Pvalue": 1.7201,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23500.DS16027.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs3820928,rs4129267,rs730532",
+"Number": 79,
+"Accession": "GSM665815",
+"Class": 1 
+},
+{
+ "Zscore":  0.563,
+"Pvalue": 0.41964,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23524.DS16164.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs4129267",
+"Number": 80,
+"Accession": "GSM665818",
+"Class": 1 
+},
+{
+ "Zscore":  1.823,
+"Pvalue": 1.0092,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23604.DS16563.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267",
+"Number": 81,
+"Accession": "GSM665826",
+"Class": 1 
+},
+{
+ "Zscore":  0.355,
+"Pvalue": 0.34289,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23744.DS17094.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 82,
+"Accession": "GSM817162",
+"Class": 1 
+},
+{
+ "Zscore":   1.95,
+"Pvalue": 1.0736,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23758.DS17157.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 83,
+"Accession": "GSM701490",
+"Class": 1 
+},
+{
+ "Zscore": -0.676,
+"Pvalue": 0.089479,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23769.DS17313.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs4129267,rs7068966",
+"Number": 84,
+"Accession": "GSM701495",
+"Class": 1 
+},
+{
+ "Zscore":  2.569,
+"Pvalue":  1.364,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23808.DS17422.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746,rs2798641,rs3820928,rs4129267,rs7068966",
+"Number": 85,
+"Accession": "GSM774213",
+"Class": 1 
+},
+{
+ "Zscore": -0.867,
+"Pvalue": 0.063217,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23833.DS17462.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs4129267",
+"Number": 86,
+"Accession": "GSM774214",
+"Class": 1 
+},
+{
+ "Zscore": -1.276,
+"Pvalue":      0,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23855.DS17502.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 87,
+"Accession": "GSM701514",
+"Class": 1 
+},
+{
+ "Zscore":  0.664,
+"Pvalue": 0.47055,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23887.DS17647.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs3820928,rs3867498,rs4129267",
+"Number": 88,
+"Accession": "GSM774217",
+"Class": 1 
+},
+{
+ "Zscore":  0.082,
+"Pvalue": 0.2549,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23914.DS17748.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 89,
+"Accession": "GSM774220",
+"Class": 1 
+},
+{
+ "Zscore": -0.348,
+"Pvalue": 0.14704,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23941.DS17785.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs4129267",
+"Number": 90,
+"Accession": "GSM701531",
+"Class": 1 
+},
+{
+ "Zscore":  1.308,
+"Pvalue": 0.81348,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-23964.DS17841.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs3734729,rs4129267",
+"Number": 91,
+"Accession": "GSM774228",
+"Class": 1 
+},
+{
+ "Zscore":  2.067,
+"Pvalue": 1.2164,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-24005.DS17990.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12447804,rs2284746,rs2798641,rs3820928,rs4129267",
+"Number": 92,
+"Accession": "GSM774233",
+"Class": 1 
+},
+{
+ "Zscore":  1.617,
+"Pvalue": 0.88025,
+"Cell": "Fetal_Intestine_Large",
+"Tissue": "Fetal Intestine, Large",
+"File": "UW.Fetal_Intestine_Large.ChromatinAccessibility.H-24111.DS18499.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746,rs2798641,rs3820928,rs4129267,rs730532",
+"Number": 93,
+"Accession": "GSM817188",
+"Class": 1 
+},
+{
+ "Zscore":  0.224,
+"Pvalue": 0.30398,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23604.DS16559.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 94,
+"Accession": "GSM665825",
+"Class": 1 
+},
+{
+ "Zscore":  1.881,
+"Pvalue": 1.0676,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23640.DS16712.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746,rs2869967,rs4129267,rs7068966",
+"Number": 95,
+"Accession": "GSM701487",
+"Class": 1 
+},
+{
+ "Zscore":  3.083,
+"Pvalue": 1.8865,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23663.DS16822.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs1928168,rs2284746,rs2798641,rs3820928,rs4129267,rs7068966",
+"Number": 96,
+"Accession": "GSM665835",
+"Class": 1 
+},
+{
+ "Zscore":  2.095,
+"Pvalue": 1.0968,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23724.DS16975.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs3734729,rs4129267,rs7068966",
+"Number": 97,
+"Accession": "GSM817161",
+"Class": 1 
+},
+{
+ "Zscore":  0.028,
+"Pvalue": 0.24029,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23744.DS17092.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 98,
+"Accession": "GSM774205",
+"Class": 1 
+},
+{
+ "Zscore":  1.905,
+"Pvalue": 1.1131,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23758.DS17150.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs1541374,rs2284746,rs2798641,rs3734729,rs4129267",
+"Number": 99,
+"Accession": "GSM774210",
+"Class": 1 
+},
+{
+ "Zscore":  0.081,
+"Pvalue": 0.2549,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23769.DS17317.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746,rs4129267",
+"Number": 100,
+"Accession": "GSM701496",
+"Class": 1 
+},
+{
+ "Zscore": -1.916,
+"Pvalue": 1.3029e-10,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23808.DS17425.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "",
+"Number": 101,
+"Accession": "GSM701504",
+"Class": 1 
+},
+{
+ "Zscore": -0.048,
+"Pvalue": 0.22156,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23864.DS17844.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267",
+"Number": 102,
+"Accession": "GSM774229",
+"Class": 1 
+},
+{
+ "Zscore":  3.035,
+"Pvalue": 1.7687,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23887.DS17643.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs1551943,rs2284746,rs2798641,rs3820928,rs4129267,rs6903823,rs7068966",
+"Number": 103,
+"Accession": "GSM774216",
+"Class": 1 
+},
+{
+ "Zscore":  1.382,
+"Pvalue": 0.77678,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23914.DS17763.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12899618,rs2284746,rs2798641,rs4129267",
+"Number": 104,
+"Accession": "GSM701530",
+"Class": 1 
+},
+{
+ "Zscore":  0.997,
+"Pvalue": 0.62669,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-23941.DS17808.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs3820928,rs4129267,rs7068966",
+"Number": 105,
+"Accession": "GSM774225",
+"Class": 1 
+},
+{
+ "Zscore":  2.676,
+"Pvalue": 1.5726,
+"Cell": "Fetal_Intestine_Small",
+"Tissue": "Fetal Intestine, Small",
+"File": "UW.Fetal_Intestine_Small.ChromatinAccessibility.H-24111.DS18495.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1551943,rs1928168,rs2284746,rs2798641,rs3820928,rs4129267,rs7068966",
+"Number": 106,
+"Accession": "GSM817187",
+"Class": 1 
+},
+{
+ "Zscore":  0.442,
+"Pvalue":  0.394,
+"Cell": "Fetal_Kidney_Left",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Left.ChromatinAccessibility.H-23589.DS16446.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs730532",
+"Number": 107,
+"Accession": "GSM665822",
+"Class": 1 
+},
+{
+ "Zscore":  2.163,
+"Pvalue": 1.2863,
+"Cell": "Fetal_Kidney_Left",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Left.ChromatinAccessibility.H-23604.DS16579.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928,rs730532,rs993925",
+"Number": 108,
+"Accession": "GSM665829",
+"Class": 1 
+},
+{
+ "Zscore":  1.989,
+"Pvalue": 1.0968,
+"Cell": "Fetal_Kidney_Left",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Left.ChromatinAccessibility.H-23640.DS16805.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs4129267",
+"Number": 109,
+"Accession": "GSM665834",
+"Class": 1 
+},
+{
+ "Zscore":  1.715,
+"Pvalue": 1.0392,
+"Cell": "Fetal_Kidney_Left",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Left.ChromatinAccessibility.H-23758.DS17140.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs3734729",
+"Number": 110,
+"Accession": "GSM774209",
+"Class": 1 
+},
+{
+ "Zscore": -0.442,
+"Pvalue": 0.13062,
+"Cell": "Fetal_Kidney_Left",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Left.ChromatinAccessibility.H-24089.DS18466.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641",
+"Number": 111,
+"Accession": "GSM817181",
+"Class": 1 
+},
+{
+ "Zscore":  0.501,
+"Pvalue": 0.42347,
+"Cell": "Fetal_Kidney_Right",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Right.ChromatinAccessibility.H-23435.DS15651.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs2284746,rs2798641,rs3734729",
+"Number": 112,
+"Accession": "GSM665810",
+"Class": 1 
+},
+{
+ "Zscore":  2.774,
+"Pvalue": 1.8896,
+"Cell": "Fetal_Kidney_Right",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Right.ChromatinAccessibility.H-23589.DS16441.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs2798641,rs3734729,rs3820928,rs7068966,rs730532",
+"Number": 113,
+"Accession": "GSM665821",
+"Class": 1 
+},
+{
+ "Zscore":  2.172,
+"Pvalue": 1.3383,
+"Cell": "Fetal_Kidney_Right",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Right.ChromatinAccessibility.H-23640.DS16801.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1529672,rs2284746,rs2798641,rs3734729,rs3820928,rs730532",
+"Number": 114,
+"Accession": "GSM665833",
+"Class": 1 
+},
+{
+ "Zscore":  1.754,
+"Pvalue": 0.96103,
+"Cell": "Fetal_Kidney_Right",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Right.ChromatinAccessibility.H-23758.DS17144.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1551943,rs2284746,rs2798641,rs3734729,rs9310995",
+"Number": 115,
+"Accession": "GSM817163",
+"Class": 1 
+},
+{
+ "Zscore":  1.875,
+"Pvalue": 1.0817,
+"Cell": "Fetal_Kidney_Right",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney_Right.ChromatinAccessibility.H-24089.DS18463.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1541374,rs2284746,rs2798641,rs3734729,rs4129267,rs730532",
+"Number": 116,
+"Accession": "GSM817180",
+"Class": 1 
+},
+{
+ "Zscore":  2.154,
+"Pvalue": 1.2531,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-22337.DS10986.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 117,
+"Accession": "GSM493385",
+"Class": 1 
+},
+{
+ "Zscore":  0.872,
+"Pvalue": 0.52662,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-22676.DS12635.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3820928",
+"Number": 118,
+"Accession": "GSM530655",
+"Class": 1 
+},
+{
+ "Zscore":  2.504,
+"Pvalue": 1.4838,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-23524.DS16139.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs12899618,rs2284746,rs2798641,rs3820928,rs730532,rs9310995",
+"Number": 119,
+"Accession": "GSM665816",
+"Class": 1 
+},
+{
+ "Zscore":  0.974,
+"Pvalue": 0.5614,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-23663.DS16837.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3820928,rs7068966",
+"Number": 120,
+"Accession": "GSM817159",
+"Class": 1 
+},
+{
+ "Zscore":  3.091,
+"Pvalue": 2.0076,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-23855.DS17522.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1541374,rs2284746,rs2798641,rs3820928,rs6903823,rs7068966,rs730532,rs9310995",
+"Number": 121,
+"Accession": "GSM701515",
+"Class": 1 
+},
+{
+ "Zscore":  2.698,
+"Pvalue": 1.6153,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-23914.DS17753.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12447804,rs12477314,rs1529672,rs2284746,rs2798641,rs3734729,rs3820928",
+"Number": 122,
+"Accession": "GSM774221",
+"Class": 1 
+},
+{
+ "Zscore":  3.104,
+"Pvalue": 2.0799,
+"Cell": "Fetal_Kidney",
+"Tissue": "Fetal Kidney",
+"File": "UW.Fetal_Kidney.ChromatinAccessibility.H-24507.DS20564.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs3734729,rs4129267,rs730532",
+"Number": 123,
+"Accession": "GSM878666",
+"Class": 1 
+},
+{
+ "Zscore":  4.283,
+"Pvalue": 3.3208,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23435.DS15637.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925,rs9978142",
+"Number": 124,
+"Accession": "GSM665808",
+"Class": 2 
+},
+{
+ "Zscore":  4.286,
+"Pvalue": 3.1957,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23604.DS16570.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs12899618,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 125,
+"Accession": "GSM665828",
+"Class": 2 
+},
+{
+ "Zscore":  4.511,
+"Pvalue": 3.2472,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23640.DS18170.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs12899618,rs1928168,rs2284746,rs2571445,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 126,
+"Accession": "GSM774237",
+"Class": 2 
+},
+{
+ "Zscore":  2.594,
+"Pvalue": 1.7405,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23744.DS17105.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925",
+"Number": 127,
+"Accession": "GSM774207",
+"Class": 1 
+},
+{
+ "Zscore":  3.333,
+"Pvalue": 2.6289,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23758.DS17154.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925,rs9978142",
+"Number": 128,
+"Accession": "GSM774211",
+"Class": 1 
+},
+{
+ "Zscore":  3.994,
+"Pvalue": 2.6376,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23833.DS17464.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 129,
+"Accession": "GSM701512",
+"Class": 1 
+},
+{
+ "Zscore":  4.049,
+"Pvalue": 2.6745,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23887.DS17674.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 130,
+"Accession": "GSM701524",
+"Class": 1 
+},
+{
+ "Zscore":  3.345,
+"Pvalue": 2.1048,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23914.DS17739.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs7068966,rs993925,rs9978142",
+"Number": 131,
+"Accession": "GSM701527",
+"Class": 1 
+},
+{
+ "Zscore":   3.38,
+"Pvalue": 2.0016,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-23964.DS17835.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs4129267,rs7068966,rs993925",
+"Number": 132,
+"Accession": "GSM701534",
+"Class": 1 
+},
+{
+ "Zscore":  2.503,
+"Pvalue": 1.6261,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-24005.DS17959.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925",
+"Number": 133,
+"Accession": "GSM817168",
+"Class": 1 
+},
+{
+ "Zscore":  3.611,
+"Pvalue": 2.4476,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-24089.DS18421.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 134,
+"Accession": "GSM817175",
+"Class": 1 
+},
+{
+ "Zscore":  4.128,
+"Pvalue": 3.7233,
+"Cell": "Fetal_Lung_Left",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Left.ChromatinAccessibility.H-24111.DS18487.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs12899618,rs1541374,rs1928168,rs2284746,rs2798641,rs3817928,rs4129267,rs7068966,rs730532,rs993925,rs9978142",
+"Number": 135,
+"Accession": "GSM817185",
+"Class": 3 
+},
+{
+ "Zscore":  2.982,
+"Pvalue": 2.4368,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23435.DS15632.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1529672,rs1541374,rs1928168,rs2284746,rs2798641,rs7068966,rs993925",
+"Number": 136,
+"Accession": "GSM665807",
+"Class": 1 
+},
+{
+ "Zscore":  2.448,
+"Pvalue": 1.6789,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23604.DS16566.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs7068966,rs993925,rs9978142",
+"Number": 137,
+"Accession": "GSM665827",
+"Class": 1 
+},
+{
+ "Zscore":  2.616,
+"Pvalue": 1.5136,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23640.DS16790.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12447804,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 138,
+"Accession": "GSM665832",
+"Class": 1 
+},
+{
+ "Zscore":  4.461,
+"Pvalue": 3.2996,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23744.DS17101.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs2865531,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 139,
+"Accession": "GSM774206",
+"Class": 2 
+},
+{
+ "Zscore":   3.45,
+"Pvalue": 2.4736,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23758.DS17162.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925",
+"Number": 140,
+"Accession": "GSM817164",
+"Class": 1 
+},
+{
+ "Zscore":  3.643,
+"Pvalue": 2.4277,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23887.DS17670.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 141,
+"Accession": "GSM701523",
+"Class": 1 
+},
+{
+ "Zscore":  2.481,
+"Pvalue": 1.7067,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-23964.DS17831.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs12899618,rs1541374,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925",
+"Number": 142,
+"Accession": "GSM774227",
+"Class": 1 
+},
+{
+ "Zscore":  2.847,
+"Pvalue": 2.0857,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-24005.DS17954.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 143,
+"Accession": "GSM774231",
+"Class": 1 
+},
+{
+ "Zscore":  2.597,
+"Pvalue": 1.8287,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-24089.DS18418.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 144,
+"Accession": "GSM817174",
+"Class": 1 
+},
+{
+ "Zscore":  4.292,
+"Pvalue": 3.9233,
+"Cell": "Fetal_Lung_Right",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung_Right.ChromatinAccessibility.H-24111.DS18492.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs12899618,rs1541374,rs1928168,rs2284746,rs2798641,rs3734729,rs4129267,rs7068966,rs730532,rs993925,rs9978142",
+"Number": 145,
+"Accession": "GSM817186",
+"Class": 3 
+},
+{
+ "Zscore":  3.784,
+"Pvalue": 2.4046,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-22676.DS12646.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 146,
+"Accession": "GSM530656",
+"Class": 1 
+},
+{
+ "Zscore":  5.109,
+"Pvalue": 3.8204,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-22727.DS12817.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 147,
+"Accession": "GSM530662",
+"Class": 3 
+},
+{
+ "Zscore":  3.523,
+"Pvalue":  2.593,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-22934B.DS13507.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs12477314,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 148,
+"Accession": "GSM595915",
+"Class": 1 
+},
+{
+ "Zscore":  3.536,
+"Pvalue": 2.6923,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23090.DS13985.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925,rs9978142",
+"Number": 149,
+"Accession": "GSM595916",
+"Class": 2 
+},
+{
+ "Zscore":  2.145,
+"Pvalue": 1.3504,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23247.DS14666.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs7068966,rs993925",
+"Number": 150,
+"Accession": "GSM595921",
+"Class": 1 
+},
+{
+ "Zscore":  3.777,
+"Pvalue": 2.8143,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23266.DS14724.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 151,
+"Accession": "GSM595924",
+"Class": 2 
+},
+{
+ "Zscore":  2.873,
+"Pvalue": 1.8563,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23266.DS14751.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs12899618,rs1928168,rs2284746,rs2798641,rs7068966,rs993925,rs9978142",
+"Number": 152,
+"Accession": "GSM595925",
+"Class": 1 
+},
+{
+ "Zscore":  3.257,
+"Pvalue": 2.1751,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23284.DS14809.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs993925",
+"Number": 153,
+"Accession": "GSM595927",
+"Class": 1 
+},
+{
+ "Zscore":  2.255,
+"Pvalue": 1.2975,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23284.DS14820.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs4129267,rs7068966,rs993925",
+"Number": 154,
+"Accession": "GSM595929",
+"Class": 1 
+},
+{
+ "Zscore":  3.203,
+"Pvalue":  2.097,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23365.DS15227.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2571445,rs2798641,rs7068966,rs993925,rs9978142",
+"Number": 155,
+"Accession": "GSM595930",
+"Class": 1 
+},
+{
+ "Zscore":   4.29,
+"Pvalue": 3.3965,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23399.DS15461.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs12716852,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267,rs6903823,rs7068966,rs730532,rs993925",
+"Number": 156,
+"Accession": "GSM665805",
+"Class": 3 
+},
+{
+ "Zscore":  5.041,
+"Pvalue":  4.539,
+"Cell": "Fetal_Lung",
+"Tissue": "Fetal Lung",
+"File": "UW.Fetal_Lung.ChromatinAccessibility.H-23419.DS15573.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs11172113,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs3817928,rs7068966,rs730532,rs993925,rs9978142",
+"Number": 157,
+"Accession": "GSM665806",
+"Class": 3 
+},
+{
+ "Zscore":  2.332,
+"Pvalue": 1.3768,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-23808.DS17432.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1541374,rs1928168,rs2284746,rs2798641,rs4129267",
+"Number": 158,
+"Accession": "GSM701506",
+"Class": 1 
+},
+{
+ "Zscore":  0.904,
+"Pvalue": 0.62881,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-23914.DS17765.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 159,
+"Accession": "GSM774223",
+"Class": 1 
+},
+{
+ "Zscore":  1.598,
+"Pvalue": 1.0141,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-23941.DS17825.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2544527,rs2798641,rs4129267,rs7068966",
+"Number": 160,
+"Accession": "GSM774226",
+"Class": 1 
+},
+{
+ "Zscore":   1.83,
+"Pvalue": 1.1076,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-23964.DS17848.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs9978142",
+"Number": 161,
+"Accession": "GSM701535",
+"Class": 1 
+},
+{
+ "Zscore":  3.674,
+"Pvalue": 2.5742,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24005.DS18080.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs6903823,rs7068966,rs730532,rs9978142",
+"Number": 162,
+"Accession": "GSM774234",
+"Class": 1 
+},
+{
+ "Zscore":  2.412,
+"Pvalue": 1.4454,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24042.DS18176.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2395730,rs2798641,rs4129267,rs9978142",
+"Number": 163,
+"Accession": "GSM774239",
+"Class": 1 
+},
+{
+ "Zscore":  1.951,
+"Pvalue": 1.1985,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24078.DS18379.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs3817928,rs4129267,rs6903823",
+"Number": 164,
+"Accession": "GSM878610",
+"Class": 1 
+},
+{
+ "Zscore":  1.957,
+"Pvalue": 1.4036,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24089.DS18452.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs730532,rs9978142",
+"Number": 165,
+"Accession": "GSM817178",
+"Class": 1 
+},
+{
+ "Zscore":  2.659,
+"Pvalue": 1.6132,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24111.DS18473.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs730532,rs9978142",
+"Number": 166,
+"Accession": "GSM817184",
+"Class": 1 
+},
+{
+ "Zscore":  2.376,
+"Pvalue": 1.4647,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24125.DS18559.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 167,
+"Accession": "GSM817191",
+"Class": 1 
+},
+{
+ "Zscore":  2.515,
+"Pvalue": 1.7201,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24143.DS18992.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 168,
+"Accession": "GSM878618",
+"Class": 1 
+},
+{
+ "Zscore":  1.477,
+"Pvalue": 0.87257,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24198.DS19051.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 169,
+"Accession": "GSM878619",
+"Class": 1 
+},
+{
+ "Zscore":  1.103,
+"Pvalue": 0.76048,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24218.DS19053.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 170,
+"Accession": "GSM878620",
+"Class": 1 
+},
+{
+ "Zscore":  3.189,
+"Pvalue": 2.3651,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24244.DS19270.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1928168,rs2284746,rs2395730,rs2798641,rs4129267,rs730532",
+"Number": 171,
+"Accession": "GSM878625",
+"Class": 1 
+},
+{
+ "Zscore":  2.114,
+"Pvalue":  1.389,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24259.DS19295.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 172,
+"Accession": "GSM817214",
+"Class": 1 
+},
+{
+ "Zscore":  2.362,
+"Pvalue": 1.6656,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24272.DS19380.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1551943,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 173,
+"Accession": "GSM817216",
+"Class": 1 
+},
+{
+ "Zscore":  2.811,
+"Pvalue": 1.6668,
+"Cell": "Fetal_Muscle_Arm",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Arm.ChromatinAccessibility.H-24297.DS19646.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 174,
+"Accession": "GSM878638",
+"Class": 1 
+},
+{
+ "Zscore":  2.575,
+"Pvalue": 1.7105,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-23914.DS17767.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2277027,rs2284746,rs2798641,rs3734729,rs4129267,rs730532,rs9978142",
+"Number": 175,
+"Accession": "GSM774224",
+"Class": 1 
+},
+{
+ "Zscore":  3.598,
+"Pvalue": 2.6175,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-23964.DS17850.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 176,
+"Accession": "GSM701536",
+"Class": 1 
+},
+{
+ "Zscore":  2.341,
+"Pvalue": 1.4498,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24005.DS18083.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs9978142",
+"Number": 177,
+"Accession": "GSM774235",
+"Class": 1 
+},
+{
+ "Zscore":  3.355,
+"Pvalue":  2.374,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24078.DS18377.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2277027,rs2284746,rs2798641,rs4129267,rs730532,rs9978142",
+"Number": 178,
+"Accession": "GSM817171",
+"Class": 1 
+},
+{
+ "Zscore":  1.726,
+"Pvalue": 1.0341,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24089.DS18454.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs2395730,rs2798641,rs4129267,rs730532",
+"Number": 179,
+"Accession": "GSM878611",
+"Class": 1 
+},
+{
+ "Zscore":  2.197,
+"Pvalue": 1.5196,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24111.DS18468.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs730532,rs9978142",
+"Number": 180,
+"Accession": "GSM817182",
+"Class": 1 
+},
+{
+ "Zscore":  3.551,
+"Pvalue": 2.3215,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24143.DS18842.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs9978142",
+"Number": 181,
+"Accession": "GSM817200",
+"Class": 1 
+},
+{
+ "Zscore":  1.833,
+"Pvalue": 1.1635,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24218.DS19117.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1928168,rs2798641,rs4129267,rs730532,rs9978142",
+"Number": 182,
+"Accession": "GSM817207",
+"Class": 1 
+},
+{
+ "Zscore":  2.427,
+"Pvalue": 1.5042,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24244.DS19283.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 183,
+"Accession": "GSM817212",
+"Class": 1 
+},
+{
+ "Zscore":  2.875,
+"Pvalue": 2.0781,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24272.DS19384.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 184,
+"Accession": "GSM817217",
+"Class": 1 
+},
+{
+ "Zscore":   2.02,
+"Pvalue": 1.3829,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24279.DS19441.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 185,
+"Accession": "GSM878632",
+"Class": 1 
+},
+{
+ "Zscore":  2.841,
+"Pvalue": 1.9527,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24297.DS19648.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 186,
+"Accession": "GSM878639",
+"Class": 1 
+},
+{
+ "Zscore":  3.453,
+"Pvalue": 2.5588,
+"Cell": "Fetal_Muscle_Back",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Back.ChromatinAccessibility.H-24409.DS20244.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs3734729,rs4129267,rs7068966,rs730532",
+"Number": 187,
+"Accession": "GSM878655",
+"Class": 1 
+},
+{
+ "Zscore":  2.629,
+"Pvalue": 1.7687,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-23808.DS17429.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs9978142",
+"Number": 188,
+"Accession": "GSM701505",
+"Class": 1 
+},
+{
+ "Zscore":  0.911,
+"Pvalue": 0.51673,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24078.DS18386.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2571445,rs2798641",
+"Number": 189,
+"Accession": "GSM774242",
+"Class": 1 
+},
+{
+ "Zscore":  0.763,
+"Pvalue": 0.51973,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24089.DS18456.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 190,
+"Accession": "GSM817179",
+"Class": 1 
+},
+{
+ "Zscore":  1.998,
+"Pvalue":  1.349,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24111.DS18471.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs9978142",
+"Number": 191,
+"Accession": "GSM817183",
+"Class": 1 
+},
+{
+ "Zscore":  2.766,
+"Pvalue": 1.6806,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24143.DS18844.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 192,
+"Accession": "GSM817201",
+"Class": 1 
+},
+{
+ "Zscore":    2.4,
+"Pvalue": 1.7698,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24198.DS19158.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs2869967,rs4129267,rs7068966,rs730532,rs9978142",
+"Number": 193,
+"Accession": "GSM878622",
+"Class": 1 
+},
+{
+ "Zscore":  2.642,
+"Pvalue": 1.9018,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24218.DS19115.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs7068966,rs730532,rs993925",
+"Number": 194,
+"Accession": "GSM817206",
+"Class": 1 
+},
+{
+ "Zscore":  2.755,
+"Pvalue": 2.0033,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24244.DS19272.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 195,
+"Accession": "GSM878626",
+"Class": 1 
+},
+{
+ "Zscore":  3.046,
+"Pvalue": 1.9486,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24259.DS19291.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 196,
+"Accession": "GSM817213",
+"Class": 1 
+},
+{
+ "Zscore":   0.97,
+"Pvalue": 0.64063,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24279.DS19436.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1928168,rs2284746,rs2798641,rs730532",
+"Number": 197,
+"Accession": "GSM878631",
+"Class": 1 
+},
+{
+ "Zscore":  3.065,
+"Pvalue": 2.4096,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24297.DS19643.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1529672,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 198,
+"Accession": "GSM878637",
+"Class": 1 
+},
+{
+ "Zscore":  1.871,
+"Pvalue":  1.191,
+"Cell": "Fetal_Muscle_Leg",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Leg.ChromatinAccessibility.H-24409.DS20239.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 199,
+"Accession": "GSM878653",
+"Class": 1 
+},
+{
+ "Zscore":  2.718,
+"Pvalue": 1.9942,
+"Cell": "Fetal_Muscle_Lower_Limb_Skeletal",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Lower_Limb_Skeletal.ChromatinAccessibility.H-24042.DS18174.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12899618,rs1928168,rs2284746,rs2798641,rs4129267,rs6903823,rs7068966,rs730532",
+"Number": 200,
+"Accession": "GSM774238",
+"Class": 1 
+},
+{
+ "Zscore":  1.288,
+"Pvalue": 0.75564,
+"Cell": "Fetal_Muscle_Trunk",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Trunk.ChromatinAccessibility.H-23941.DS17827.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 201,
+"Accession": "GSM701533",
+"Class": 1 
+},
+{
+ "Zscore":  2.081,
+"Pvalue": 1.2389,
+"Cell": "Fetal_Muscle_Trunk",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Trunk.ChromatinAccessibility.H-24409.DS20242.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 202,
+"Accession": "GSM878654",
+"Class": 1 
+},
+{
+ "Zscore":  1.867,
+"Pvalue": 1.1521,
+"Cell": "Fetal_Muscle_Trunk",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Trunk.ChromatinAccessibility.H-24507.DS20544.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 203,
+"Accession": "GSM878664",
+"Class": 1 
+},
+{
+ "Zscore":  2.396,
+"Pvalue": 1.2847,
+"Cell": "Fetal_Muscle_Upper_Limb_Skeletal",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Upper_Limb_Skeletal.ChromatinAccessibility.H-23887.DS17661.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs1928168,rs2277027,rs2284746,rs2798641,rs4129267",
+"Number": 204,
+"Accession": "GSM701522",
+"Class": 1 
+},
+{
+ "Zscore":  4.462,
+"Pvalue": 3.2162,
+"Cell": "Fetal_Muscle_Upper_Trunk",
+"Tissue": "Fetal Muscle",
+"File": "UW.Fetal_Muscle_Upper_Trunk.ChromatinAccessibility.H-23887.DS17664.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs12477314,rs1529672,rs1928168,rs2284746,rs2798641,rs3817928,rs4129267,rs7068966,rs993925",
+"Number": 205,
+"Accession": "GSM774218",
+"Class": 2 
+},
+{
+ "Zscore":  1.002,
+"Pvalue": 0.60419,
+"Cell": "Fetal_Placenta",
+"Tissue": "Fetal Placenta",
+"File": "UW.Fetal_Placenta.ChromatinAccessibility.H-23887.DS17639.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs1529672,rs2284746,rs2798641,rs7068966",
+"Number": 206,
+"Accession": "GSM774215",
+"Class": 1 
+},
+{
+ "Zscore":  0.007,
+"Pvalue": 0.23503,
+"Cell": "Fetal_Placenta",
+"Tissue": "Fetal Placenta",
+"File": "UW.Fetal_Placenta.ChromatinAccessibility.H-23914.DS17744.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs7068966",
+"Number": 207,
+"Accession": "GSM774219",
+"Class": 1 
+},
+{
+ "Zscore":  3.081,
+"Pvalue": 1.7998,
+"Cell": "Fetal_Placenta",
+"Tissue": "Fetal Placenta",
+"File": "UW.Fetal_Placenta.ChromatinAccessibility.H-24272.DS19391.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs1529672,rs2284746,rs2798641,rs4129267,rs7068966",
+"Number": 208,
+"Accession": "GSM817219",
+"Class": 1 
+},
+{
+ "Zscore":  0.834,
+"Pvalue": 0.50067,
+"Cell": "Fetal_Placenta",
+"Tissue": "Fetal Placenta",
+"File": "UW.Fetal_Placenta.ChromatinAccessibility.H-24409.DS20346.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs3734729,rs7068966",
+"Number": 209,
+"Accession": "GSM878659",
+"Class": 1 
+},
+{
+ "Zscore":  2.688,
+"Pvalue": 1.7892,
+"Cell": "Fetal_Renal_Cortex_Left",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Left.ChromatinAccessibility.H-23871.DS17550.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1344555,rs2284746,rs2798641,rs3734729,rs6903823,rs730532,rs9310995",
+"Number": 210,
+"Accession": "GSM701519",
+"Class": 1 
+},
+{
+ "Zscore":  0.806,
+"Pvalue": 0.54471,
+"Cell": "Fetal_Renal_Cortex_Left",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Left.ChromatinAccessibility.H-24111.DS18542.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs730532",
+"Number": 211,
+"Accession": "GSM817190",
+"Class": 1 
+},
+{
+ "Zscore":  1.268,
+"Pvalue": 0.73917,
+"Cell": "Fetal_Renal_Cortex_Left",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Left.ChromatinAccessibility.H-24169.DS18931.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3734729,rs9978142",
+"Number": 212,
+"Accession": "GSM817203",
+"Class": 1 
+},
+{
+ "Zscore":  2.613,
+"Pvalue": 1.7005,
+"Cell": "Fetal_Renal_Cortex_Left",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Left.ChromatinAccessibility.H-24232.DS19257.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928,rs730532",
+"Number": 213,
+"Accession": "GSM817211",
+"Class": 1 
+},
+{
+ "Zscore":  1.704,
+"Pvalue": 0.97815,
+"Cell": "Fetal_Renal_Cortex_Right",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Right.ChromatinAccessibility.H-23871.DS17545.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1551943,rs2284746,rs2798641,rs3734729,rs730532",
+"Number": 214,
+"Accession": "GSM701517",
+"Class": 1 
+},
+{
+ "Zscore":  2.591,
+"Pvalue": 1.6523,
+"Cell": "Fetal_Renal_Cortex_Right",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Right.ChromatinAccessibility.H-24169.DS18928.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928,rs4129267,rs9310995",
+"Number": 215,
+"Accession": "GSM817202",
+"Class": 1 
+},
+{
+ "Zscore":  2.713,
+"Pvalue":  1.594,
+"Cell": "Fetal_Renal_Cortex_Right",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex_Right.ChromatinAccessibility.H-24232.DS19254.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs2798641,rs3734729,rs3820928,rs730532",
+"Number": 216,
+"Accession": "GSM817210",
+"Class": 1 
+},
+{
+ "Zscore":  1.462,
+"Pvalue": 0.97815,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-23769.DS17307.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1541374,rs2284746,rs2798641,rs3734729,rs730532",
+"Number": 217,
+"Accession": "GSM701494",
+"Class": 1 
+},
+{
+ "Zscore":  1.735,
+"Pvalue": 1.0241,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-23790.DS17387.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 218,
+"Accession": "GSM701502",
+"Class": 1 
+},
+{
+ "Zscore":  2.048,
+"Pvalue": 1.2015,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-23833.DS17455.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928",
+"Number": 219,
+"Accession": "GSM701511",
+"Class": 1 
+},
+{
+ "Zscore":   1.68,
+"Pvalue": 0.95929,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-23914.DS17756.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1551943,rs2284746,rs2798641,rs3734729",
+"Number": 220,
+"Accession": "GSM701529",
+"Class": 1 
+},
+{
+ "Zscore":  2.324,
+"Pvalue": 1.3647,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-23941.DS17804.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928,rs993925",
+"Number": 221,
+"Accession": "GSM701532",
+"Class": 1 
+},
+{
+ "Zscore":   2.42,
+"Pvalue": 1.4374,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-24078.DS18428.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs1529672,rs1541374,rs2284746,rs2798641,rs3820928,rs9310995",
+"Number": 222,
+"Accession": "GSM817176",
+"Class": 1 
+},
+{
+ "Zscore":  1.999,
+"Pvalue": 1.1408,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-24259.DS19388.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3820928,rs730532",
+"Number": 223,
+"Accession": "GSM878629",
+"Class": 1 
+},
+{
+ "Zscore":  0.814,
+"Pvalue": 0.53132,
+"Cell": "Fetal_Renal_Cortex",
+"Tissue": "Fetal Renal Cortex",
+"File": "UW.Fetal_Renal_Cortex.ChromatinAccessibility.H-24493.DS20568.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3820928",
+"Number": 224,
+"Accession": "GSM878667",
+"Class": 1 
+},
+{
+ "Zscore":  2.178,
+"Pvalue": 1.3706,
+"Cell": "Fetal_Renal_Pelvis_Left",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Left.ChromatinAccessibility.H-23871.DS17553.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs6903823,rs730532,rs9310995",
+"Number": 225,
+"Accession": "GSM701520",
+"Class": 1 
+},
+{
+ "Zscore":  1.852,
+"Pvalue": 1.1241,
+"Cell": "Fetal_Renal_Pelvis_Left",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Left.ChromatinAccessibility.H-24111.DS18666.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3734729,rs7068966,rs9978142",
+"Number": 226,
+"Accession": "GSM817193",
+"Class": 1 
+},
+{
+ "Zscore":  1.059,
+"Pvalue": 0.65487,
+"Cell": "Fetal_Renal_Pelvis_Left",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Left.ChromatinAccessibility.H-24169.DS18964.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3820928,rs730532",
+"Number": 227,
+"Accession": "GSM817205",
+"Class": 1 
+},
+{
+ "Zscore":   3.17,
+"Pvalue": 1.7546,
+"Cell": "Fetal_Renal_Pelvis_Left",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Left.ChromatinAccessibility.H-24232.DS19238.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs3734729,rs3820928,rs7068966,rs730532",
+"Number": 228,
+"Accession": "GSM817209",
+"Class": 1 
+},
+{
+ "Zscore":  1.195,
+"Pvalue": 0.7458,
+"Cell": "Fetal_Renal_Pelvis_Right",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Right.ChromatinAccessibility.H-23871.DS17548.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1529672,rs2284746,rs2798641,rs3820928,rs730532",
+"Number": 229,
+"Accession": "GSM701518",
+"Class": 1 
+},
+{
+ "Zscore":  2.942,
+"Pvalue": 1.6722,
+"Cell": "Fetal_Renal_Pelvis_Right",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Right.ChromatinAccessibility.H-24111.DS18663.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs4129267,rs730532,rs993925",
+"Number": 230,
+"Accession": "GSM817192",
+"Class": 1 
+},
+{
+ "Zscore": -0.083,
+"Pvalue": 0.21195,
+"Cell": "Fetal_Renal_Pelvis_Right",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Right.ChromatinAccessibility.H-24169.DS18961.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641",
+"Number": 231,
+"Accession": "GSM817204",
+"Class": 1 
+},
+{
+ "Zscore":  1.501,
+"Pvalue": 0.80297,
+"Cell": "Fetal_Renal_Pelvis_Right",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis_Right.ChromatinAccessibility.H-24232.DS19235.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3734729,rs730532",
+"Number": 232,
+"Accession": "GSM817208",
+"Class": 1 
+},
+{
+ "Zscore":  3.207,
+"Pvalue":  2.196,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-23790.DS17381.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs12477314,rs1541374,rs2284746,rs2798641,rs3820928,rs4129267,rs730532",
+"Number": 233,
+"Accession": "GSM701501",
+"Class": 1 
+},
+{
+ "Zscore":  1.429,
+"Pvalue": 0.85905,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-23833.DS17451.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 234,
+"Accession": "GSM701510",
+"Class": 1 
+},
+{
+ "Zscore":  1.006,
+"Pvalue": 0.61983,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-23914.DS17760.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs2798641",
+"Number": 235,
+"Accession": "GSM774222",
+"Class": 1 
+},
+{
+ "Zscore":  2.271,
+"Pvalue": 1.2532,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-24005.DS18088.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs4129267",
+"Number": 236,
+"Accession": "GSM774236",
+"Class": 1 
+},
+{
+ "Zscore":  1.678,
+"Pvalue": 0.91081,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-24078.DS18431.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs2284746,rs2798641,rs6903823,rs730532",
+"Number": 237,
+"Accession": "GSM817177",
+"Class": 1 
+},
+{
+ "Zscore":   1.93,
+"Pvalue":  1.191,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-24259.DS19386.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs3734729,rs4129267,rs730532,rs9310995",
+"Number": 238,
+"Accession": "GSM817218",
+"Class": 1 
+},
+{
+ "Zscore":  1.703,
+"Pvalue": 1.0174,
+"Cell": "Fetal_Renal_Pelvis",
+"Tissue": "Fetal Renal Pelvis",
+"File": "UW.Fetal_Renal_Pelvis.ChromatinAccessibility.H-24477.DS20448.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs3734729,rs730532,rs9310995",
+"Number": 239,
+"Accession": "GSM878662",
+"Class": 1 
+},
+{
+ "Zscore":  1.685,
+"Pvalue":  1.032,
+"Cell": "Fetal_Skin",
+"Tissue": "Fetal Skin",
+"File": "UW.Fetal_Skin.ChromatinAccessibility.H-22337.DS10987.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs2798641,rs357394,rs993925",
+"Number": 240,
+"Accession": "GSM817158",
+"Class": 1 
+},
+{
+ "Zscore":  2.128,
+"Pvalue": 1.3631,
+"Cell": "Fetal_Spinal_Cord",
+"Tissue": "Fetal Spinal Cord",
+"File": "UW.Fetal_Spinal_Cord.ChromatinAccessibility.H-24111.DS18501.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532,rs9978142",
+"Number": 241,
+"Accession": "GSM817189",
+"Class": 1 
+},
+{
+ "Zscore":   1.58,
+"Pvalue": 0.9333,
+"Cell": "Fetal_Spinal_Cord",
+"Tissue": "Fetal Spinal Cord",
+"File": "UW.Fetal_Spinal_Cord.ChromatinAccessibility.H-24409.DS20351.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs2284746,rs2798641,rs6903823,rs7068966",
+"Number": 242,
+"Accession": "GSM878661",
+"Class": 1 
+},
+{
+ "Zscore":  0.948,
+"Pvalue": 0.62326,
+"Cell": "Fetal_Spinal_Cord",
+"Tissue": "Fetal Spinal Cord",
+"File": "UW.Fetal_Spinal_Cord.ChromatinAccessibility.H-24493.DS20530.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs12477314,rs2798641,rs4129267,rs730532",
+"Number": 243,
+"Accession": "GSM878663",
+"Class": 1 
+},
+{
+ "Zscore":  -0.08,
+"Pvalue": 0.21195,
+"Cell": "Fetal_Spleen",
+"Tissue": "Fetal Spleen",
+"File": "UW.Fetal_Spleen.ChromatinAccessibility.H-23399.DS17448.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs2798641,rs3820928",
+"Number": 244,
+"Accession": "GSM701509",
+"Class": 1 
+},
+{
+ "Zscore": -0.041,
+"Pvalue": 0.22319,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23589.DS16530.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs7068966",
+"Number": 245,
+"Accession": "GSM774202",
+"Class": 1 
+},
+{
+ "Zscore":  1.759,
+"Pvalue": 1.1521,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23758.DS17172.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs1928168,rs2284746,rs2798641,rs6903823,rs7068966",
+"Number": 246,
+"Accession": "GSM774212",
+"Class": 1 
+},
+{
+ "Zscore": -0.031,
+"Pvalue": 0.21398,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23769.DS17325.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746",
+"Number": 247,
+"Accession": "GSM701498",
+"Class": 1 
+},
+{
+ "Zscore":  2.867,
+"Pvalue": 1.6982,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23887.DS17659.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 248,
+"Accession": "GSM701521",
+"Class": 1 
+},
+{
+ "Zscore":  2.196,
+"Pvalue": 1.1897,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23914.DS17750.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs7068966",
+"Number": 249,
+"Accession": "GSM701528",
+"Class": 1 
+},
+{
+ "Zscore":  3.518,
+"Pvalue": 2.5016,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-23964.DS17878.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs7068966,rs730532",
+"Number": 250,
+"Accession": "GSM701538",
+"Class": 1 
+},
+{
+ "Zscore":  2.555,
+"Pvalue": 1.4843,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-24005.DS17963.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1928168,rs2284746,rs2798641,rs6903823,rs7068966",
+"Number": 251,
+"Accession": "GSM774232",
+"Class": 1 
+},
+{
+ "Zscore":  1.095,
+"Pvalue": 0.71121,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-24078.DS18389.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs2284746,rs4129267,rs6903823,rs7068966",
+"Number": 252,
+"Accession": "GSM817173",
+"Class": 1 
+},
+{
+ "Zscore":  1.863,
+"Pvalue": 1.0861,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-24125.DS18821.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 253,
+"Accession": "GSM817199",
+"Class": 1 
+},
+{
+ "Zscore":  2.516,
+"Pvalue":   1.42,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-24401.DS20349.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs2284746,rs2798641,rs6903823,rs7068966,rs730532",
+"Number": 254,
+"Accession": "GSM878660",
+"Class": 1 
+},
+{
+ "Zscore":  2.538,
+"Pvalue": 1.6153,
+"Cell": "Fetal_Stomach",
+"Tissue": "Fetal Stomach",
+"File": "UW.Fetal_Stomach.ChromatinAccessibility.H-24507.DS20546.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs12477314,rs1928168,rs2284746,rs2798641,rs7068966,rs730532",
+"Number": 255,
+"Accession": "GSM878665",
+"Class": 1 
+},
+{
+ "Zscore":  2.404,
+"Pvalue": 1.6593,
+"Cell": "Fetal_Testes",
+"Tissue": "Fetal Testes",
+"File": "UW.Fetal_Testes.ChromatinAccessibility.H24198_H23640_H24042.DS18942.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs2284746,rs2798641,rs2865531,rs3820928,rs730532",
+"Number": 256,
+"Accession": "GSM878617",
+"Class": 1 
+},
+{
+ "Zscore":  1.384,
+"Pvalue": 0.77251,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23589.DS16490.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1928168,rs2284746,rs2798641,rs3820928,rs7068966",
+"Number": 257,
+"Accession": "GSM665823",
+"Class": 1 
+},
+{
+ "Zscore":  0.313,
+"Pvalue": 0.33498,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23663.DS16841.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12447804,rs2284746,rs2798641",
+"Number": 258,
+"Accession": "GSM774204",
+"Class": 1 
+},
+{
+ "Zscore": -0.847,
+"Pvalue": 0.041231,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23769.DS17323.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746",
+"Number": 259,
+"Accession": "GSM701497",
+"Class": 1 
+},
+{
+ "Zscore":    0.7,
+"Pvalue": 0.48208,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23833.DS17474.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12716852,rs1344555,rs2284746,rs6903823",
+"Number": 260,
+"Accession": "GSM701513",
+"Class": 1 
+},
+{
+ "Zscore":  1.532,
+"Pvalue": 0.79288,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23964.DS17875.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs3820928,rs7068966",
+"Number": 261,
+"Accession": "GSM701537",
+"Class": 1 
+},
+{
+ "Zscore":   0.25,
+"Pvalue": 0.3178,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-23964.DS17876.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs3820928,rs6903823",
+"Number": 262,
+"Accession": "GSM774230",
+"Class": 1 
+},
+{
+ "Zscore":  1.659,
+"Pvalue": 1.0583,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-24078.DS18382.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12447804,rs1551943,rs2284746,rs3820928,rs4129267,rs6903823,rs7068966",
+"Number": 263,
+"Accession": "GSM817172",
+"Class": 1 
+},
+{
+ "Zscore":  1.879,
+"Pvalue": 1.0797,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-24259.DS19287.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11001819,rs11172113,rs2284746,rs2798641,rs4129267",
+"Number": 264,
+"Accession": "GSM878627",
+"Class": 1 
+},
+{
+ "Zscore":  1.263,
+"Pvalue": 0.73355,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-24401.DS20335.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs3820928,rs7068966",
+"Number": 265,
+"Accession": "GSM878656",
+"Class": 1 
+},
+{
+ "Zscore":  1.971,
+"Pvalue": 1.1364,
+"Cell": "Fetal_Thymus",
+"Tissue": "Fetal Thymus",
+"File": "UW.Fetal_Thymus.ChromatinAccessibility.H-24409.DS20341.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs3820928,rs7068966,rs730532",
+"Number": 266,
+"Accession": "GSM878657",
+"Class": 1 
+},
+{
+ "Zscore":  3.099,
+"Pvalue": 1.7893,
+"Cell": "Fibroblasts_Fetal_Skin_Abdomen",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Abdomen.ChromatinAccessibility.H-24259.DS19558.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 267,
+"Accession": "GSM878635",
+"Class": 1 
+},
+{
+ "Zscore":  1.681,
+"Pvalue": 0.99212,
+"Cell": "Fibroblasts_Fetal_Skin_Abdomen",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Abdomen.ChromatinAccessibility.H-24259.DS19561.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs4129267,rs730532",
+"Number": 268,
+"Accession": "GSM878636",
+"Class": 1 
+},
+{
+ "Zscore":  4.018,
+"Pvalue":   2.21,
+"Cell": "Fibroblasts_Fetal_Skin_Back",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Back.ChromatinAccessibility.H-24218.DS19233.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs2284746,rs4129267,rs7068966,rs730532",
+"Number": 269,
+"Accession": "GSM878624",
+"Class": 1 
+},
+{
+ "Zscore":  2.857,
+"Pvalue": 1.8766,
+"Cell": "Fibroblasts_Fetal_Skin_Biceps_Left",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Biceps_Left.ChromatinAccessibility.H-24259.DS19857.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 270,
+"Accession": "GSM878644",
+"Class": 1 
+},
+{
+ "Zscore":  3.102,
+"Pvalue": 1.8667,
+"Cell": "Fibroblasts_Fetal_Skin_Biceps_Left",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Biceps_Left.ChromatinAccessibility.H-24259.DS19867.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 271,
+"Accession": "GSM878645",
+"Class": 1 
+},
+{
+ "Zscore":  3.254,
+"Pvalue": 2.0124,
+"Cell": "Fibroblasts_Fetal_Skin_Biceps_Right",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Biceps_Right.ChromatinAccessibility.H-24259.DS19745.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 272,
+"Accession": "GSM878642",
+"Class": 1 
+},
+{
+ "Zscore":  2.789,
+"Pvalue": 1.7893,
+"Cell": "Fibroblasts_Fetal_Skin_Biceps_Right",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Biceps_Right.ChromatinAccessibility.H-24259.DS19761.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 273,
+"Accession": "GSM878643",
+"Class": 1 
+},
+{
+ "Zscore":  2.384,
+"Pvalue": 1.6633,
+"Cell": "Fibroblasts_Fetal_Skin_Quadriceps_Left",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Quadriceps_Left.ChromatinAccessibility.H-24259.DS20046.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs4129267,rs730532,rs993925",
+"Number": 274,
+"Accession": "GSM878648",
+"Class": 1 
+},
+{
+ "Zscore":  1.677,
+"Pvalue": 1.1364,
+"Cell": "Fibroblasts_Fetal_Skin_Quadriceps_Left",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Quadriceps_Left.ChromatinAccessibility.H-24259.DS20056.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs4129267,rs730532",
+"Number": 275,
+"Accession": "GSM878649",
+"Class": 1 
+},
+{
+ "Zscore":  2.371,
+"Pvalue": 1.3926,
+"Cell": "Fibroblasts_Fetal_Skin_Quadriceps_Right",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Quadriceps_Right.ChromatinAccessibility.H-24259.DS19943.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs4129267,rs730532",
+"Number": 276,
+"Accession": "GSM878646",
+"Class": 1 
+},
+{
+ "Zscore":   2.53,
+"Pvalue": 1.5961,
+"Cell": "Fibroblasts_Fetal_Skin_Quadriceps_Right",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Quadriceps_Right.ChromatinAccessibility.H-24259.DS19948.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs3817928,rs4129267,rs730532",
+"Number": 277,
+"Accession": "GSM878647",
+"Class": 1 
+},
+{
+ "Zscore":  1.838,
+"Pvalue": 0.98622,
+"Cell": "Fibroblasts_Fetal_Skin_Scalp",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Scalp.ChromatinAccessibility.H-24259.DS19444.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs2284746,rs4129267,rs730532",
+"Number": 278,
+"Accession": "GSM878633",
+"Class": 1 
+},
+{
+ "Zscore":  2.737,
+"Pvalue": 1.4518,
+"Cell": "Fibroblasts_Fetal_Skin_Scalp",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Scalp.ChromatinAccessibility.H-24259.DS19449.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 279,
+"Accession": "GSM878634",
+"Class": 1 
+},
+{
+ "Zscore":  3.147,
+"Pvalue": 1.8275,
+"Cell": "Fibroblasts_Fetal_Skin_Upper_Back",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Upper_Back.ChromatinAccessibility.H-24259.DS19696.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1551943,rs2284746,rs4129267,rs730532",
+"Number": 280,
+"Accession": "GSM878640",
+"Class": 1 
+},
+{
+ "Zscore":  2.466,
+"Pvalue": 1.6377,
+"Cell": "Fibroblasts_Fetal_Skin_Upper_Back",
+"Tissue": "Fibroblast",
+"File": "UW.Fibroblasts_Fetal_Skin_Upper_Back.ChromatinAccessibility.H-24259.DS19706.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1529672,rs2284746,rs4129267,rs730532",
+"Number": 281,
+"Accession": "GSM878641",
+"Class": 1 
+},
+{
+ "Zscore":  4.478,
+"Pvalue": 3.4185,
+"Cell": "Penis_Foreskin_Fibroblast",
+"Tissue": "Fibroblast",
+"File": "UW.Penis_Foreskin_Fibroblast_Primary_Cells.ChromatinAccessibility.skin01.DS18224.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1036429,rs11172113,rs12477314,rs1551943,rs2284746,rs2798641,rs3820928,rs4129267,rs6903823,rs730532,rs993925",
+"Number": 282,
+"Accession": "GSM774240",
+"Class": 3 
+},
+{
+ "Zscore":   3.54,
+"Pvalue": 2.6881,
+"Cell": "Penis_Foreskin_Fibroblast",
+"Tissue": "Fibroblast",
+"File": "UW.Penis_Foreskin_Fibroblast_Primary_Cells.ChromatinAccessibility.skin01.DS18229.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12447804,rs12477314,rs1551943,rs2284746,rs2798641,rs3817928,rs4129267,rs730532",
+"Number": 283,
+"Accession": "GSM774241",
+"Class": 2 
+},
+{
+ "Zscore":  2.696,
+"Pvalue": 1.8179,
+"Cell": "Penis_Foreskin_Fibroblast",
+"Tissue": "Fibroblast",
+"File": "UW.Penis_Foreskin_Fibroblast_Primary_Cells.ChromatinAccessibility.skin02.DS18252.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs4129267,rs730532",
+"Number": 284,
+"Accession": "GSM817169",
+"Class": 1 
+},
+{
+ "Zscore":  4.432,
+"Pvalue": 3.0378,
+"Cell": "Penis_Foreskin_Fibroblast",
+"Tissue": "Fibroblast",
+"File": "UW.Penis_Foreskin_Fibroblast_Primary_Cells.ChromatinAccessibility.skin02.DS18256.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs2284746,rs2798641,rs4129267,rs6903823,rs730532,rs993925",
+"Number": 285,
+"Accession": "GSM817170",
+"Class": 2 
+},
+{
+ "Zscore":  0.768,
+"Pvalue": 0.46165,
+"Cell": "iPS_DF_4.7",
+"Tissue": "IPS cell",
+"File": "UW.iPS_DF_4.7.ChromatinAccessibility.DS15169.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 286,
+"Accession": "GSM665803",
+"Class": 1 
+},
+{
+ "Zscore":  0.197,
+"Pvalue": 0.2911,
+"Cell": "iPS_DF_6.9",
+"Tissue": "IPS cell",
+"File": "UW.iPS_DF_6.9.ChromatinAccessibility.DS15164.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 287,
+"Accession": "GSM665802",
+"Class": 1 
+},
+{
+ "Zscore":  0.758,
+"Pvalue": 0.5133,
+"Cell": "iPS_DF_19.7",
+"Tissue": "IPS cell",
+"File": "UW.iPS_DF_19.7.ChromatinAccessibility.DS15148.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 288,
+"Accession": "GSM665800",
+"Class": 1 
+},
+{
+ "Zscore":  0.487,
+"Pvalue": 0.3915,
+"Cell": "iPS_DF_19.11",
+"Tissue": "IPS cell",
+"File": "UW.iPS_DF_19.11.ChromatinAccessibility.DS15153.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11172113,rs2284746",
+"Number": 289,
+"Accession": "GSM665801",
+"Class": 1 
+},
+{
+ "Zscore":  4.861,
+"Pvalue": 4.0529,
+"Cell": "IMR90",
+"Tissue": "Lung",
+"File": "UW.IMR90.ChromatinAccessibility.DS11759.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs6903823,rs7068966,rs730532",
+"Number": 290,
+"Accession": "GSM468792",
+"Class": 3 
+},
+{
+ "Zscore":  2.247,
+"Pvalue": 1.3053,
+"Cell": "IMR90",
+"Tissue": "Lung",
+"File": "UW.IMR90.ChromatinAccessibility.DS11764.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs7068966,rs730532",
+"Number": 291,
+"Accession": "GSM468801",
+"Class": 1 
+},
+{
+ "Zscore":  4.756,
+"Pvalue": 4.1061,
+"Cell": "IMR90",
+"Tissue": "Lung",
+"File": "UW.IMR90.ChromatinAccessibility.DS13219.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs11172113,rs12477314,rs1928168,rs2284746,rs2798641,rs3817928,rs4129267,rs7068966,rs730532,rs993925",
+"Number": 292,
+"Accession": "GSM530665",
+"Class": 3 
+},
+{
+ "Zscore":  4.469,
+"Pvalue": 3.0653,
+"Cell": "IMR90",
+"Tissue": "Lung",
+"File": "UW.IMR90.ChromatinAccessibility.DS13229.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs12477314,rs1928168,rs2284746,rs2798641,rs4129267,rs6903823,rs7068966,rs730532",
+"Number": 293,
+"Accession": "GSM530666",
+"Class": 2 
+},
+{
+ "Zscore":  1.947,
+"Pvalue": 1.1352,
+"Cell": "Penis_Foreskin_Keratinocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Keratinocyte_Primary_Cells.ChromatinAccessibility.skin01.DS18692.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1551943,rs2284746,rs2798641,rs4129267,rs6903823,rs9978142",
+"Number": 294,
+"Accession": "GSM817194",
+"Class": 1 
+},
+{
+ "Zscore":   1.71,
+"Pvalue": 0.96469,
+"Cell": "Penis_Foreskin_Keratinocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Keratinocyte_Primary_Cells.ChromatinAccessibility.skin01.DS18695.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1551943,rs2798641,rs4129267,rs6903823,rs9978142",
+"Number": 295,
+"Accession": "GSM817195",
+"Class": 1 
+},
+{
+ "Zscore":  2.943,
+"Pvalue": 1.8328,
+"Cell": "Penis_Foreskin_Keratinocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Keratinocyte_Primary_Cells.ChromatinAccessibility.skin02.DS18714.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs1551943,rs2284746,rs4129267,rs6903823,rs7068966,rs730532,rs9978142",
+"Number": 296,
+"Accession": "GSM817196",
+"Class": 1 
+},
+{
+ "Zscore":   1.45,
+"Pvalue": 0.91228,
+"Cell": "Penis_Foreskin_Keratinocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Keratinocyte_Primary_Cells.ChromatinAccessibility.skin02.DS18718.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs2284746,rs2798641,rs4129267,rs6903823,rs9978142",
+"Number": 297,
+"Accession": "GSM817197",
+"Class": 1 
+},
+{
+ "Zscore": -0.151,
+"Pvalue": 0.18207,
+"Cell": "Penis_Foreskin_Melanocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Melanocyte_Primary_Cells.ChromatinAccessibility.skin01.DS18590.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs2284746",
+"Number": 298,
+"Accession": "GSM774243",
+"Class": 1 
+},
+{
+ "Zscore":  1.715,
+"Pvalue": 1.1022,
+"Cell": "Penis_Foreskin_Melanocyte",
+"Tissue": "Skin",
+"File": "UW.Penis_Foreskin_Melanocyte_Primary_Cells.ChromatinAccessibility.skin01.DS18601.twopass.merge150.wgt10.zgt2.wig",
+"SNPs": "rs10516526,rs11001819,rs11172113,rs2284746,rs4129267,rs993925",
+"Number": 299,
+"Accession": "GSM774244",
+"Class": 1 
+} 
+],
+    xAxis = {
+ "type": "addCategoryAxis",
+"showPercent": false,
+"grouporderRule": "Tissue",
+"orderRule": "Cell" 
+},
+    yAxis = {
+ "type": "addMeasureAxis",
+"showPercent": false 
+},
+    zAxis = [],
+    colorAxis = {
+ "type": "addColorAxis",
+"colorSeries": "Class",
+"palette": [ "lightblue", "pink", "red" ] 
+},
+    legend = [];
+  var svg = dimple.newSvg("#" + opts.id, opts.width, opts.height);
+
+  //data = dimple.filterData(data, "Owner", ["Aperture", "Black Mesa"])
+  var myChart = new dimple.chart(svg, data);
+  if (opts.bounds) {
+    myChart.setBounds(opts.bounds.x, opts.bounds.y, opts.bounds.width, opts.bounds.height);//myChart.setBounds(80, 30, 480, 330);
+  }
+  //dimple allows use of custom CSS with noFormats
+  if(opts.noFormats) { myChart.noFormats = opts.noFormats; };
+  //for markimekko and addAxis also have third parameter measure
+  //so need to evaluate if measure provided
+  //x axis
+  var x;
+  if(xAxis.measure) {
+    x = myChart[xAxis.type]("x",opts.x,xAxis.measure);
+  } else {
+    x = myChart[xAxis.type]("x", opts.x);
+  };
+  if(!(xAxis.type === "addPctAxis")) x.showPercent = xAxis.showPercent;
+  if (xAxis.orderRule) x.addOrderRule(xAxis.orderRule);
+  if (xAxis.grouporderRule) x.addGroupOrderRule(xAxis.grouporderRule);  
+  if (xAxis.overrideMin) x.overrideMin = xAxis.overrideMin;
+  if (xAxis.overrideMax) x.overrideMax = xAxis.overrideMax;
+  if (xAxis.overrideMax) x.overrideMax = xAxis.overrideMax;
+  if (xAxis.inputFormat) x.dateParseFormat = xAxis.inputFormat;
+  if (xAxis.outputFormat) x.tickFormat = xAxis.outputFormat;
+  //y axis
+  var y;
+  if(yAxis.measure) {
+    y = myChart[yAxis.type]("y",opts.y,yAxis.measure);
+  } else {
+    y = myChart[yAxis.type]("y", opts.y);
+  };
+  if(!(yAxis.type === "addPctAxis")) y.showPercent = yAxis.showPercent;
+  if (yAxis.orderRule) y.addOrderRule(yAxis.orderRule);
+  if (yAxis.grouporderRule) y.addGroupOrderRule(yAxis.grouporderRule);
+  if (yAxis.overrideMin) y.overrideMin = yAxis.overrideMin;
+  if (yAxis.overrideMax) y.overrideMax = yAxis.overrideMax;
+  if (yAxis.inputFormat) y.dateParseFormat = yAxis.inputFormat;
+  if (yAxis.outputFormat) y.tickFormat = yAxis.outputFormat;
+//z for bubbles
+    var z;
+  if (!(typeof(zAxis) === 'undefined') && zAxis.type){
+    if(zAxis.measure) {
+      z = myChart[zAxis.type]("z",opts.z,zAxis.measure);
+    } else {
+      z = myChart[zAxis.type]("z", opts.z);
+    };
+    if(!(zAxis.type === "addPctAxis")) z.showPercent = zAxis.showPercent;
+    if (zAxis.orderRule) z.addOrderRule(zAxis.orderRule);
+    if (zAxis.overrideMin) z.overrideMin = zAxis.overrideMin;
+    if (zAxis.overrideMax) z.overrideMax = zAxis.overrideMax;
+  }
+  if(d3.keys(colorAxis).length > 0) {
+    myChart[colorAxis.type](colorAxis.colorSeries,colorAxis.palette) ;
+  }
+  
+  //here need think I need to evaluate group and if missing do null
+  //as the first argument
+  //if provided need to use groups from opts
+  if(opts.hasOwnProperty("groups")) {
+    var s = myChart.addSeries( opts.groups, dimple.plot[opts.type] );
+    //series offers an aggregate method that we will also need to check if available
+    //options available are avg, count, max, min, sum
+    if (!(typeof(opts.aggregate) === 'undefined')) {
+      s.aggregate = eval(opts.aggregate);
+    }
+    if (!(typeof(opts.lineWeight) === 'undefined')) {
+      s.lineWeight = eval(opts.lineWeight);
+    }
+    if (!(typeof(opts.barGap) === 'undefined')) {
+      s.barGap = eval(opts.barGap);
+    }    
+  } else var s = myChart.addSeries( null, dimple.plot[opts.type] );
+  //unsure if this is best but if legend is provided (not empty) then evaluate
+  if(d3.keys(legend).length > 0) {
+    var l =myChart.addLegend();
+    d3.keys(legend).forEach(function(d){
+      l[d] = legend[d];
+    });
+  }
+  //quick way to get this going but need to make this cleaner
+  if(opts.storyboard) {
+    myChart.setStoryboard(opts.storyboard);
+  };
+  myChart.draw();
+
+</script>
+    
+  </body>
+</html>

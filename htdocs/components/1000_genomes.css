@@ -1,0 +1,62 @@
+
+body {
+    background-color: #EAE9E5;
+    border-top:5px solid #3B5F75;
+}
+
+h1 {
+    color:#D88132;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:18px;
+}
+
+h2, h3 {
+    color:#2796AF;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+}
+
+.orange_top {
+    background:#FFFFFF url(/i/orange_header.gif) no-repeat scroll left top;
+}
+
+#header {
+    background:#18252E url(/i/1000genomes.gif) no-repeat scroll right center;
+    border-bottom:1px solid #191919;
+    color:#18252E;
+    height:152px;
+    22position:relative;
+}
+
+#header_line {
+    -x-system-font:none;
+    color:#DAA406;
+    font-family:"Trebuchet MS",arial,sans-serif,tahoma;
+    font-size:3em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:30px;
+    padding:40px 0 0 10px;
+    2background:#18252E url(/i/1000genomes.gif) no-repeat scroll right center;
+}
+
+#tagline {
+    -x-system-font:none;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS",arial,sans-serif,tahoma;
+    font-size:1.5em;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:30px;
+    padding:10px 0 0 10px;
+}
+
+tr.td_nowrap td {
+  white-space: nowrap;
+}

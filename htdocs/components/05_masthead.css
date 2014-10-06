@@ -1,0 +1,4 @@
+#masthead ul.tabs li.active a:hover       { color:#DAA40D !important; }
+#masthead                                 { background-color: [[MH_BG]]; color: [[MH_TEXT]]; height: 45px; position: relative; }
+#header .search_holder  { position: absolute; top: 17px; right: 5px; z-index: 350; margin-left: 10px; display: inline; }
+#header .tools_holder                   { display: inline; }
