@@ -23,8 +23,9 @@ sub init {
   my $session    = $hub->session;
   my $user       = $hub->user;
   my $has_data   = grep($session->get_data(type => $_), qw (upload url das)) || ($user && (grep $user->get_records($_), qw(uploads urls dases)));
-  my $view_config;
-     $view_config = $hub->get_viewconfig(@{shift @components}) while !$view_config && scalar @components; 
+  my $url         = $hub->url;
+  my $region      = $hub->param('r') || '';  
+  my $view_config = $hub->get_viewconfig(@{shift @components}) while !$view_config && scalar @components; 
   
   if ($view_config) {
     my $component = $view_config->component;
@@ -80,6 +81,7 @@ sub init {
     $self->add_entry({
       caption => 'Get VCF data',
       class   => 'modal_link',
+      rel     => 'modal_user_data',
       url     => $hub->url({
         time   => time,
         type   => 'UserData',
