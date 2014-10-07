@@ -6,71 +6,74 @@ sub label_classes {
   return {
     'Configure this page' => 'config',
     'Manage your data'    => 'data',
+    'Add your data'       => 'data',
     'Export data'         => 'export',
     'Bookmark this page'  => 'bookmark',
+    'Share this page'     => 'share',
     'Get VCF data'        => 'data'
   };
 }
 
-
 sub init {
-    my $self        = shift;
-    my $controller  = shift;
-    my $hub         = $controller->hub;
-    my $object      = $controller->object;
-    my @components  = @{$hub->components};
-    my $view_config;
-    my $region      = $hub->param('r') || '';
-    my $url         = $hub->url;
-
-    $view_config = $hub->get_viewconfig(shift @components) while !$view_config && scalar @components;
-
-    if ($view_config) {
-	my $component = $view_config->component;
-
-	$self->add_entry({
+  my $self       = shift;  
+  my $controller = shift;
+  my $hub        = $controller->hub;
+  my $object     = $controller->object;
+  my @components = @{$hub->components};
+  my $session    = $hub->session;
+  my $user       = $hub->user;
+  my $has_data   = grep($session->get_data(type => $_), qw (upload url das)) || ($user && (grep $user->get_records($_), qw(uploads urls dases)));
+  my $view_config;
+     $view_config = $hub->get_viewconfig(@{shift @components}) while !$view_config && scalar @components; 
+  
+  if ($view_config) {
+    my $component = $view_config->component;
+    
+    $self->add_entry({
       caption => 'Configure this page',
       class   => 'modal_link',
       rel     => "modal_config_$component",
       url     => $hub->url('Config', {
+        type      => $view_config->type,
         action    => $component,
         function  => undef,
-    })
-      });
-    } else {
-	$self->add_entry({
+      })
+    });
+  } else {
+    $self->add_entry({
       caption => 'Configure this page',
       class   => 'disabled',
       url     => undef,
       title   => 'There are no options for this page'
-      });
-    }
-
-    $self->add_entry({
-    caption => 'Manage your data',
+    });
+  }
+  
+  $self->add_entry({
+    caption => $has_data ? 'Manage your data' : 'Add your data',
     class   => 'modal_link',
+    rel     => 'modal_user_data',
     url     => $hub->url({
       time    => time,
       type    => 'UserData',
-      action  => 'ManageData',
+      action  => $has_data ? 'ManageData' : 'SelectFile',
       __clear => 1
-      })
-    });
-
-    if ($object && $object->can_export) {
-	$self->add_entry({
+    })
+  });
+ 
+  if ($object && $object->can_export) {
+    $self->add_entry({
       caption => 'Export data',
       class   => 'modal_link',
       url     => $self->export_url($hub)
-      });
-    } else {
-	$self->add_entry({
+    });
+  } else {
+    $self->add_entry({
       caption => 'Export data',
       class   => 'disabled',
       url     => undef,
       title   => 'You cannot export data from this page'
-      });
-    }
+    });
+  }
 
   #vcf BOF                                                                                                                                                                                                   
   if (($url !~ /Info\/Index/) && ($region =~ /^(.+?):(\d+)-(\d+)$/)) {
@@ -93,45 +96,39 @@ sub init {
       });
   }
   #vcf EOF                                 
-
-    if ($hub->user) {
-	my $title = $controller->page->title;
-
-	$self->add_entry({
+  
+  if ($hub->user) {
+    my $title = $controller->page->title;
+    
+    $self->add_entry({
       caption => 'Bookmark this page',
       class   => 'modal_link',
       url     => $hub->url({
-        type      => 'Account',
-        action    => 'Bookmark/Add',
-        __clear   => 1,
-        name      => $title->get,
-        shortname => $title->get_short,
-        url       => $hub->species_defs->ENSEMBL_BASE_URL . $hub->url
-	})
-      });
-    } else {
-	$self->add_entry({
+        type        => 'Account',
+        action      => 'Bookmark/Add',
+        __clear     => 1,
+        name        => uri_escape($title->get_short),
+        description => uri_escape($title->get),
+        url         => uri_escape($hub->species_defs->ENSEMBL_BASE_URL . $hub->url)
+      })
+    });
+  } else {
+    $self->add_entry({
       caption => 'Bookmark this page',
       class   => 'disabled',
       url     => undef,
       title   => 'You must be logged in to bookmark pages'
-      });
-    }
-
-    if ($url !~ /\/ExternalData\// && $url !~ /_g1k\?/) {
-      $self->add_entry({
-        caption => 'View in Ensembl',
-        url     => 'http://GRCh37.ensembl.org'.$hub->url,
-        rel     => 'external',
-      });
-    } else {
-      $self->add_entry({
-        caption => 'View in Ensembl',
-        class   => 'disabled',
-        url     => undef,
-        title   => 'You cannot view the data from this page in Ensembl'
-      });
-    }
+    });
+  }
+  
+  $self->add_entry({
+    caption => 'Share this page',
+    url     => $hub->url('Share', {
+      __clear => 1,
+      create  => 1,
+      time    => time
+    })
+  });
 }
 
 
