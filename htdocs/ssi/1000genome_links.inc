@@ -10,10 +10,10 @@ More information about the 1000 Genomes Project on the 1000 genomes
 </td>
 </tr>
 
-<td><a href="http://pilotbrowser.1000genomes.org"><img src="/i/species/48/Homo_sapiens.png" alt="" style="border:1px solid #99c;" /></a></td>
+<td><a href="http://phase1browser.1000genomes.org"><img src="/i/species/48/Homo_sapiens.png" alt="" style="border:1px solid #99c;" /></a></td>
 <td width="90%">
-  <a href="http://pilotbrowser.1000genomes.org"><b>Pilot browser</b></a> &rarr;<br />
-This browser is based on Ensembl release 60 and represents the variant set analysed as part of <a href="http://www.nature.com/nature/journal/v470/n7332/full/nature09708.html">A map of human genome variation from population-scale sequencing</a> , Nature 467 ,1061.1073.
+  <a href="http://phase1browser.1000genomes.org"><b>Phase1 browser</b></a> &rarr;<br />
+This browser is based on Ensembl release 73 and represents the variant set analysed as part of <a href="http://www.nature.com/nature/journal/v491/n7422/full/nature11632.html">An integrated map of genetic variation from 1,092 human genomes</a> , Nature 491, 56-65.
 </td>
 </tr>
 
