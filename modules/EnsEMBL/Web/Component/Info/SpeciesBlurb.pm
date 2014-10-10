@@ -56,14 +56,7 @@ sub content {
   ## ASSEMBLY STATS 
   my $file = '/ssi/species/stats_' . $self->hub->species . '.html';
   $html .= '<h2>Statistics</h2>';
-  $html .= EnsEMBL::Web::Controller::SSI::template_INCLUDE($self, $file);
-
-  my $interpro = $self->hub->url({'action' => 'IPtop500'});
-  $html .= qq(<h3>InterPro Hits</h3>
-<ul>
-  <li><a href="$interpro">Table of top 500 InterPro hits</a></li>
-</ul>);
-
+  $html .= $self->species_stats;
   $html .= '
     </div>
   </div>
