@@ -161,6 +161,23 @@ sub init {
       time    => time
     })
   });
+
+
+    if ($url !~ /\/ExternalData\// && $url !~ /_g1k\?/) {
+      $self->add_entry({
+        caption => 'View in Ensembl',
+        url     => 'http://grch37.ensembl.org'.$hub->url,
+        rel     => 'external',
+      });
+    } else {
+      $self->add_entry({
+        caption => 'View in Ensembl',
+        class   => 'disabled',
+        url     => undef,
+        title   => 'You cannot view the data from this page in Ensembl'
+      });
+    }
+
 }
 
 
