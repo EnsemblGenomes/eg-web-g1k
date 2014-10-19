@@ -170,7 +170,7 @@ sub _funcgen_text {
   if ($sample_data->{REGULATION_PARAM}) {
     $html = '<div class="homepage-icon">';
 
-    my $reg_url  = $species_defs->species_path . '/Regulation/Cell_line?db=funcgen;rf=' . $sample_data->{'REGULATION_PARAM'};
+    my $reg_url  = $species_defs->species_path . '/Regulation/Summary?db=funcgen;rf=' . $sample_data->{'REGULATION_PARAM'};
     my $reg_text = $sample_data->{'REGULATION_TEXT'};
     $html .= qq(<a class="nodeco _ht" href="$reg_url" title="Go to regulatory feature $reg_text"><img src="${img_url}96/regulation.png" class="bordered" /><span>Example regulatory feature</span></a>);
 
