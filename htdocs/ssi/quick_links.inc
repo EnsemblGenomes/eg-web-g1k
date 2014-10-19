@@ -22,7 +22,7 @@ View the consequences of sequence variation at the level of each protein in the 
 <tr>
 <td></td>
 <td width="90%">
-  <a href="/Homo_sapiens/Variation/Individual_g1k?r=6:74125388-74126388;v=rs311685;vdb=variation;vf=29731040"><b>Individual genotypes</b></a> &rarr;<br />
+  <a href="/Homo_sapiens/Variation/Individual?r=6:74125388-74126388;v=rs311685;vdb=variation;vf=29731040"><b>Individual genotypes</b></a> &rarr;<br />
 Show different individual's genotype, for a variant.
 </td>
 </tr>
