@@ -37,17 +37,16 @@ sub progress {
 
     my $job = $hub->param('code');
     my $jobname = $hub->param('name');
-
     return unless $jobname;
 
     my $jobstatus = $hub->param('jobstatus') || 'new';
 
     my $current_species = $hub->data_species;
-    my $action_url = $hub->species_path($current_species)."/UserData/AlleleFreqOutput";
+    my $action_url = $hub->species_path($current_species)."/UserData/AlleleFreqOutput?jobname=$jobname";
     my $form = $self->modal_form('alstatusForm', $action_url, {no_button => 1});
     
     $form->add_element( type => 'Hidden', name => 'jobid', 'value' => $job, id=>"jobid");
-    $form->add_element( type => 'Hidden', name => 'name', 'value'=>$jobname, id=>"name");
+    $form->add_element( type => 'Hidden', name => 'jobname', 'value'=>$jobname, id=>"jobname");
     $form->add_element( type => 'Hidden', name => 'jobstatus', id=>'jobstatus');
     $form->add_notes({ 
 	'heading'=>'Allele Frequency Tool',

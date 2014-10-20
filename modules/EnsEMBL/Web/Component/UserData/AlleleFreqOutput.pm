@@ -35,7 +35,7 @@ sub content {
 #    my $extension = $record->{'extension'};
 #    my $filename = $record->{'filename'};
     my $current_species = $hub->species_path($hub->data_species);
-    my $nm      = $self->hub->param('name');
+    my $nm      = $hub->param('jobname');
 
     my $filename = $hub->species_defs->ENSEMBL_TMP_DIR.'/download/'.$nm;
 
@@ -45,7 +45,7 @@ sub content {
     my $head;
     my $cnt;
     
-    if (-e $filename) {
+    if ($nm && -e $filename) {
       my $name    = $record->{'name'} || 'allelefreq_output';
       my $url = "../../tmp/download/$nm"; 
       my $i;
