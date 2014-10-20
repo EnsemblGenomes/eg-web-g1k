@@ -5,7 +5,7 @@ use warnings;
 no warnings "uninitialized";
 
 use EnsEMBL::Web::Constants;
-use EnsEMBL::Web::Tools::FileHandler;
+use EnsEMBL::Web::Util::FileHandler;
 
 use base qw(EnsEMBL::Web::Component::UserData);
 
