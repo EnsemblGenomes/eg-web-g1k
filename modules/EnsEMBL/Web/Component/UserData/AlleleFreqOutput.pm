@@ -49,7 +49,7 @@ sub content {
       my $name    = $record->{'name'} || 'allelefreq_output';
       my $url = "../../tmp/download/$nm"; 
       my $i;
-      my @head = file_get_contents($filename);
+      my @head = EnsEMBL::Web::Utils::FileHandler::file_get_contents($filename);
       foreach my $line (@head){
         my $ll = join('&#09;', split(/\t/, $line ));
         last if $i >= 50;
