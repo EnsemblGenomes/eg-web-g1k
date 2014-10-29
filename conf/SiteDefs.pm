@@ -20,11 +20,15 @@ sub update_conf {
 
     @SiteDefs::ENSEMBL_PERL_DIRS    = (
                                            $SiteDefs::ENSEMBL_SERVERROOT.'/perl',
-                                           $SiteDefs::ENSEMBL_SERVERROOT.'/eg-plugins/common/perl',
+                                           $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-common/perl',
 				       );
     $SiteDefs::ENSEMBL_DATASETS = ['Homo_sapiens'];
 
     $SiteDefs::OBJECT_TO_SCRIPT->{'Info'} = 'AltPage';#for e!69/70 style species home page
+ push @SiteDefs::ENSEMBL_LIB_DIRS, (
+ "$SiteDefs::ENSEMBL_SERVERROOT/ensembl-io/modules"
+);
+
 }
 
 1;
