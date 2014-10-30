@@ -43,12 +43,13 @@ sub content {
 
   #VCF/BAM INPUT FORM 
   unless ($filter_screen) {
+# data for different chromsomes can come at a later data and have a not that does not follow LATEST_RELEASE_VCF template
+# in this case we set LATEST_RELEASE_VCF_$CHR  to point to the specific file
+      my $chr_url = "LATEST_RELEASE_VCF_$chr";
+      $url = $hub->species_defs->$chr_url;
+ 
+      $url ||= $hub->species_defs->LATEST_RELEASE_VCF ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF, $chr) : '';
 
-    $url    = $hub->species_defs->LATEST_RELEASE_VCF ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF, $chr) : '';
-
-    if ($chr eq 'MT' || $chr eq 'Y') {
-      $url = $hub->species_defs->LATEST_RELEASE_VCF_MT_Y ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF_MT_Y, $chr) : '';
-    }
 
     $region = $r ? $hub->param('r') : '';
 
