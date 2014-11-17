@@ -85,6 +85,64 @@ sub content {
   return $html;  
 }
 
+sub _assembly_text {
+  my $self             = shift;
+  my $hub              = $self->hub;
+  my $species_defs     = $hub->species_defs;
+  my $species          = $hub->species;
+  my $name             = $species_defs->SPECIES_COMMON_NAME;
+  my $img_url          = $self->img_url;
+  my $sample_data      = $species_defs->SAMPLE_DATA;
+  my $ensembl_version  = $self->_site_release;
+  my $current_assembly = $species_defs->ASSEMBLY_NAME;
+  my $accession        = $species_defs->ASSEMBLY_ACCESSION;
+  my $source           = $species_defs->ASSEMBLY_ACCESSION_SOURCE || 'NCBI';
+  my $source_type      = $species_defs->ASSEMBLY_ACCESSION_TYPE;
+ #my %archive          = %{$species_defs->get_config($species, 'ENSEMBL_ARCHIVES') || {}};
+  my %assemblies       = %{$species_defs->get_config($species, 'ASSEMBLIES') || {}};
+  my $previous         = $current_assembly;
+
+  my $html = '<div class="homepage-icon">';
+
+  if (@{$species_defs->ENSEMBL_CHROMOSOMES || []}) {
+    $html .= qq(<a class="nodeco _ht" href="/$species/Location/Genome" title="Go to $name karyotype"><img src="${img_url}96/karyotype.png" class="bordered" /><span>View karyotype</span></a>);
+  }
+
+  my $region_text = $sample_data->{'LOCATION_TEXT'};
+  my $region_url  = $species_defs->species_path . '/Location/View?r=' . $sample_data->{'LOCATION_PARAM'};
+
+  $html .= qq(<a class="nodeco _ht" href="$region_url" title="Go to $region_text"><img src="${img_url}96/region.png" class="bordered" /><span>Example region</span></a>);
+  $html .= '</div>'; #homepage-icon
+
+  my $assembly = $current_assembly;
+  if ($accession) {
+    $assembly = $hub->get_ExtURL_link($current_assembly, 'ENA', $accession);
+  }
+  $html .= "<h2>Genome assembly: $assembly</h2>";
+  $html .= qq(<p><a href="/$species/Info/Annotation/#assembly" class="nodeco"><img src="${img_url}24/info.png" alt="" class="homepage-link" />More information and statistics</a></p>);
+
+  # Link to FTP site
+  if ($species_defs->ENSEMBL_FTP_URL) {
+    my $ftp_url;
+    if ($self->is_bacteria) {
+      $ftp_url = sprintf '%s/release-%s/fasta/%s_collection/%s/dna/', $species_defs->ENSEMBL_FTP_URL, $ensembl_version, $species_defs->SPECIES_DATASET, lc $species;
+    }
+    else {
+      $ftp_url = sprintf '%s/release-%s/fasta/%s/dna/', $species_defs->ENSEMBL_FTP_URL, $ensembl_version, lc $species;
+    }
+    $html .= qq(<p><a href="$ftp_url" class="nodeco"><img src="${img_url}24/download.png" alt="" class="homepage-link" />Download DNA sequence</a> (FASTA)</p>);
+  }
+
+  # Link to assembly mapper
+  my $mappings = $species_defs->ASSEMBLY_MAPPINGS;
+  if ($mappings && ref($mappings) eq 'ARRAY') {
+    my $am_url = $hub->url({'type' => 'UserData', 'action' => 'SelectFeatures'});
+    $html .= qq(<p><a href="$am_url" class="modal_link nodeco"><img src="${img_url}24/tool.png" class="homepage-link" />Convert your data to $assembly coordinates</a></p>);
+  }
+  
+  return $html;
+}
+
 sub _variation_text {
   my $self            = shift;
   my $hub             = $self->hub;
@@ -139,7 +197,7 @@ sub _variation_text {
 # 1KG
 #    if ($species_defs->ENSEMBL_FTP_URL) {
 #      my $ftp_url = sprintf '%s/release-%s/variation/gvf/%s/', $species_defs->ENSEMBL_FTP_URL, $ensembl_version, lc $species;
-    my $ftp_url = 'http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase1/analysis_results/';
+    my $ftp_url = 'ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/';
       $html   .= qq(
 <p><a href="$ftp_url" class="nodeco"><img src="${img_url}24/download.png" alt="" class="homepage-link" />Explore 1000 genomes raw data files</a> (VCF)</p>);
 #    }
@@ -182,8 +240,6 @@ sub _funcgen_text {
     if ($self->_other_text('regulation', $species)) {
       $html .= qq(<p><a href="/$species/Info/Annotation#regulation" class="nodeco"><img src="${img_url}24/info.png" alt="" class="homepage-link" />More about regulation in $display_name</a></p>);
     }
-
-    $html .= qq(<p><a href="/info/docs/funcgen/" class="nodeco"><img src="${img_url}24/info.png" alt="" class="homepage-link" />More about the $site regulatory build</a> and <a href="/info/docs/microarray_probe_set_mapping.html" class="nodeco">microarray annotation</a></p>);
 
     if ($species_defs->ENSEMBL_FTP_URL) {
       my $ftp_url = sprintf '%s/release-%s/regulation/%s/', $species_defs->ENSEMBL_FTP_URL, $ensembl_version, lc $species;
