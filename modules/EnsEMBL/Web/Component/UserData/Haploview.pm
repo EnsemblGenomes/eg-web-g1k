@@ -227,7 +227,7 @@ sub content {
    } #check data && process
   
    #If no population is selected from the Multi Select list, then all the populations from the Sample-Population Mapping File are taken:
-   my @populations  = $hub->param('pop_list') ? $hub->param('pop_list') : split /,/, $hub->param('all_pops');
+   my @populations  =  $hub->referer->{params}->{pop_list} ? @{$hub->referer->{params}->{pop_list}} : split /,/, $hub->param('all_pops');
    my ($output_ped_, $output_info_);
    my $output_dir = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer';  
 
