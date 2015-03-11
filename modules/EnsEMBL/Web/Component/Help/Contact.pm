@@ -5,7 +5,7 @@ sub content {
   my $self  = shift;
   my $hub   = $self->hub;
 
-  my $form      = $self->new_form({'id' => 'contact', 'action' => "/Help/Preview", 'method' => 'post'});
+  my $form      = $self->new_form({'id' => 'contact', 'action' => "/Help/SendEmail", 'method' => 'post'});
   my $fieldset  = $form->add_fieldset;
 
   if ($hub->param('strong')) {
@@ -52,7 +52,7 @@ sub content {
   $fieldset->add_button({
     'type'    => 'Submit',
     'name'    => 'submit',
-    'value'   => 'Preview',
+    'value'   => 'Send',
   });
 
   return $form->render;
