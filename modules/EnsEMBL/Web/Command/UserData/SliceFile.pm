@@ -49,7 +49,7 @@ sub _slice_vcf {
       system($vcf_command);
 
       my $fname_2  = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer/filtered_' . $newname;
-      $vcf_command = "vcf-subset -c $samples $fname | bgzip > $fname_2";
+      $vcf_command = "vcf-subset -f -c $samples $fname | bgzip > $fname_2";
    #   warn "CMD 2: $vcf_command \n";
       system($vcf_command);
       $newname = 'filtered_' . $newname;
