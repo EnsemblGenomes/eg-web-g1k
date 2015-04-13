@@ -198,6 +198,8 @@ sub content {
 	      push @{$sample_pop->{$pop}}, $sam;
 	  }
       }
+      delete $sample_pop->{pop};
+
       my $pops = [];
       for my $population (sort {$a cmp $b} keys %{$sample_pop}) {
         push @{$pops}, { value => $population,  name => $population };
