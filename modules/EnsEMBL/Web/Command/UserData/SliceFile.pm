@@ -12,9 +12,10 @@ sub _slice_bam {
 
     my @path = split('/', $hub->param('url'));
     (my $newname = $region . '.' . $path[-1]) =~ s/\:/\./g;
-    my $fname = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer/'.$newname;	  
-    my $cmd = "samtools view $url $region -h -b -o $fname"; #output in sam format
-##    my $cmd = "samtools view $url $region -h -b -o $fname"; #output in bam format
+    my $dir= $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer';
+    my $fname = $dir.'/'.$newname;	  
+    my $cmd = "cd $dir; samtools view $url $region -h -o $fname";
+#    my $cmd = "samtools view $url $region -h -b -o $fname"; #output in sam format
 #   my $cmd = "export TMPDIR=/tmp; samtools view $url $region -h -b > /tmp/$newname";
 
 #    warn "CMD: $cmd \n";
