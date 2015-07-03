@@ -171,8 +171,8 @@ notes=>qq|<a href="javascript: void(0);" onClick="document.getElementById('forge
 
   $form->add_element( type => 'NoEdit', label => 'Significance thresholds (<span style="font-size:80%">P values before Bonferroni correction </span> ) ');
 #  $form->add_element( type => 'NoEdit', label => '<span style="padding-left:20px;font-size:80%"> ( enter zero values for both to disable filtering by significance ) </span>' );
-  $form->add_element( type => 'String', name => 'tmin', label => '<span style="padding-left:20px;font-size:80%">Min</span>', value => $tmin );
-  $form->add_element( type => 'String', name => 'tmax', label => '<span style="padding-left:20px;font-size:80%">Max</span>', value => $tmax );
+  $form->add_element( type => 'String', name => 'tmin', label => '<span style="padding-left:20px;font-size:80%">High</span>', value => $tmin );
+  $form->add_element( type => 'String', name => 'tmax', label => '<span style="padding-left:20px;font-size:80%">Low</span>', value => $tmax );
 
   
   $form->add_element('type' => 'SubHeader', 'value' => ' ');
