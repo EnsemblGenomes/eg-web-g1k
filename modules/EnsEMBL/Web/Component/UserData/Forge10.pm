@@ -34,7 +34,7 @@ sub content {
 
 
   my $html;
-  my $form = $self->modal_form('forge', $action_url,{method => 'post'});
+  my $form = $self->modal_form('forge', $action_url,{method => 'post', enctype=>"multipart/form-data"});
 
   $form->add_notes({ 
     'heading'=>'Forge Analysis',

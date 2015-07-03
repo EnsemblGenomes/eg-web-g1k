@@ -72,8 +72,8 @@ sub process {
       $forge = Bio::Analysis::Forge->new(
 	  {
 	      output => $fname,
-	      bkgd => $params->{'bkgd'},
-	      data => $params->{'data'},
+        bkgd => $params->{'bkgd'},
+        data =>  $params->{'src'},
 	      label => $params->{'name'} || '',
 	      ld  => $params->{'ld'},
 	      tmin  => $params->{'tmin'},
