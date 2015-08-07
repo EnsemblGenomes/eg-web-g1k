@@ -154,18 +154,29 @@ sub final_screen {
     my $exitcode = $? >>8;
     $params->{'error_code'} = $exitcode;
     warn "!!! Allele Frequency Calculation ERROR, TABIX: ".$params->{'error_code'};
-    my $action_url = $hub->url({
+
+    # ensembl-4022, adding a delay and try again due to some weird behaviour of ftp server
+    sleep(2);
+    $index_resp = system ("cd $tmp_dir; tabix -f -h -p vcf $url ".$params->{region}." > $shortname");
+    my $action_url;
+    if  ($index_resp) {
+      my $exitcode = $? >>8;
+      $params->{'error_code'} = $exitcode;
+      warn "!!! Second attempt, Allele Frequency Calculation ERROR, TABIX: ".$params->{'error_code'};
+    
+      # now redirecting
+      $action_url = $hub->url({
                   type   => 'UserData',
                   action => 'Allele',
                   error => "File URL doesn't exist"
-              });
-    $hub->session->add_data(
+                });
+      $hub->session->add_data(
           'type'     => 'message',
           'code'     => 'Allele',
           'message'  => "File URL doesn't exist",
           'function' => '_error');
-
-    return $self->ajax_redirect($action_url);
+      return $self->ajax_redirect($action_url);
+    }
   }
 
   $index_resp = system ("cd $tmp_dir; bgzip -c $shortname>$shortname.gz");
