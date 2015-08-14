@@ -11,6 +11,7 @@ use LWP::Simple;
 use Digest::MD5 qw(md5_hex);
 use File::Copy;
 use EnsEMBL::Web::TmpFile;
+use EnsEMBL::Web::TmpFile::Text;
 
 sub process {
   my $self = shift;
