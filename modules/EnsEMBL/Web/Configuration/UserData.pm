@@ -10,19 +10,6 @@ sub modify_tree {
 
   my $convert_menu = $self->get_node( 'Conversion' );
 
-  $convert_menu->append(
-    $self->create_node('SelectReportOptions', 'Region Report',
-      [qw(report_options EnsEMBL::Web::Component::UserData::SelectReportOptions)]));
-  $convert_menu->append(
-    $self->create_node('RegionReportOutput',  '',
-      [qw(region_report  EnsEMBL::Web::Component::UserData::RegionReportOutput)]));
-  $convert_menu->append(
-    $self->create_node('CheckRegions',  '', [],
-      { command => 'EnsEMBL::Web::Command::UserData::CheckRegions'  }));
-  $convert_menu->append(
-    $self->create_node('RunRegionTool', '', [],
-      { command => 'EnsEMBL::Web::Command::UserData::RunRegionTool' }));
-
   ## Slice file attachment
  $convert_menu->append(
   $self->create_node( 'SelectSlice', "Data Slicer",
