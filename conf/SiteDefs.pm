@@ -7,7 +7,7 @@ sub update_conf {
     $SiteDefs::ENSEMBL_SITETYPE = '1000 Genomes';
     $SiteDefs::SITE_NAME = '1000 Genomes';
     $SiteDefs::SITE_RELEASE_VERSION = 17;
-    $SiteDefs::SITE_RELEASE_DATE = 'Jul 2015';
+    $SiteDefs::SITE_RELEASE_DATE = 'Nov 2015';
     $SiteDefs::ENSEMBL_SERVERNAME     = 'browser.1000genomes.org';
     $SiteDefs::ENSEMBL_BASE_URL     = 'http://browser.1000genomes.org';
     $SiteDefs::ENSEMBL_HELPDESK_EMAIL  = 'info@1000genomes.org';
