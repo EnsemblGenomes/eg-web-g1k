@@ -138,7 +138,7 @@ sub init {
   #switch on some variation tracks by default
   $self->modify_configs(
 #    [ 'variation_set_1kg_com','variation_set_ph_variants', 'sv_set_1kg_hq' ],
-    [ 'variation_set_1kg_p3' ],
+    [ 'variation_set_1kg_p3', 'variation_set_1kg_3_com' ],
     { display => 'compact' }
   );
 

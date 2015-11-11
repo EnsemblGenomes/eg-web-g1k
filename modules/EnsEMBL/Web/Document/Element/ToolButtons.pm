@@ -106,7 +106,7 @@ sub init {
   }
   
   #vcf BOF                                                                                                                                                                                                   
-  if (($url !~ /Info\/Index/) && ($region =~ /^(.+?):(\d+)-(\d+)$/)) {
+  if (($url !~ /Info\/Index/) && ($region =~ /^(.+?):(\d+)-(\d+)$/) && (grep { $_ eq $1 } @{$hub->species_defs->ENSEMBL_CHROMOSOMES || []}) || $region eq 'MT') {
     $self->add_entry({
       caption => 'Get VCF data',
       class   => 'modal_link',
