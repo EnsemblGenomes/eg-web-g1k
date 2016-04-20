@@ -178,7 +178,7 @@ sub content {
   }
 
   #FILTER FORM 
-  my $form = $self->modal_form('selectfilter', "$current_species/UserData/SliceFile", { 'wizard' => 1, 'back_button' => 1, 'method' => 'get'});
+  my $form = $self->modal_form('selectfilter', "$current_species/UserData/SliceFile", { 'wizard' => 1, 'back_button' => 1, 'method' => 'post'});
   $form->add_element(type =>  'Hidden', name => 'region',    'value' => $region);
   $form->add_element(type =>  'Hidden', name => 'url',       'value' => $url);
   $form->add_element(type =>  'Hidden', name => 'vcffilter', 'value' => '1');
