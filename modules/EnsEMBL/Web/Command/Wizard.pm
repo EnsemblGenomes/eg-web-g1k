@@ -68,11 +68,15 @@ sub process {
     $params->{$name} = $value;
   }
 
-  # I know we should be calling $self->ajax_redirect($url, $params) here.
-  # But this will redirect POST request to another POST request with different URI.
   my $r = $self->page->renderer->{'r'};
-  $r->headers_out->set('Location' => $url);
-  $r->status(Apache2::Const::HTTP_TEMPORARY_REDIRECT);
+
+  if ($r->method eq 'POST') {
+    # This will redirect POST request to another POST request with different URI.
+    $r->headers_out->set('Location' => $url);
+    $r->status(Apache2::Const::HTTP_TEMPORARY_REDIRECT);
+  } else {
+    $self->ajax_redirect($url, $params);
+  }
 }
 
 1;
