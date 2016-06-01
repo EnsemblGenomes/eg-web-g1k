@@ -41,7 +41,9 @@ sub content {
   if (!$check_data && !$process) {
 
     my ($chr) = $r ? split /:/, $r : split /:/, $regioneg;
-    $vcfurl   = $species_defs->LATEST_RELEASE_VCF ? sprintf ($species_defs->LATEST_RELEASE_VCF, $chr) : '';
+    my $chr_u = "LATEST_RELEASE_VCF_$chr";
+    $vcfurl   = $species_defs->$chr_u;  
+    $vcfurl ||= $species_defs->LATEST_RELEASE_VCF ? sprintf ($species_defs->LATEST_RELEASE_VCF, $chr) : '';
 
       my $html= qq(<div id="VCFtoPEDconverter" class="js_panel __h __h_comp_VCFtoPEDconverter" style="overflow-x: auto;">
        <form name="haploview" class="check std" method="get" action="$current_species/UserData/Haploview">
