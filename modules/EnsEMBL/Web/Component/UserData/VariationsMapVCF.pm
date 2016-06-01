@@ -30,7 +30,9 @@ sub content {
     my $regioneg  = '6:46620015-46620998';
     my ($chr)     = $r ? split /:/, $r : split /:/, $regioneg;
     my ($chreg)   = split /:/, $regioneg;
-    my $url_value = $hub->species_defs->LATEST_RELEASE_VCF ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF, $chr)    : '';
+    my $chr_url   = "LATEST_RELEASE_VCF_$chr";
+    my $url_value = $hub->species_defs->$chr_url;
+    $url_value  ||= $hub->species_defs->LATEST_RELEASE_VCF ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF, $chr)    : '';
     my $url_note  = $hub->species_defs->LATEST_RELEASE_VCF ? sprintf ($hub->species_defs->LATEST_RELEASE_VCF, $chreg)  : ''; 	     
 
     unless ($variation_mapper) {
