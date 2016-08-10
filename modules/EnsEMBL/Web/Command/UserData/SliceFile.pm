@@ -14,7 +14,7 @@ sub _slice_bam {
     (my $newname = $region . '.' . $path[-1]) =~ s/\:/\./g;
     my $dir= $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer';
     my $fname = $dir.'/'.$newname;
-    my $cmd = "cd $dir; samtools view $url $region -h -o $fname";
+    my $cmd = "cd $dir; samtools view $url $region -h -b -o $fname";
 #    my $cmd = "samtools view $url $region -h -b -o $fname"; #output in sam format
 #   my $cmd = "export TMPDIR=/tmp; samtools view $url $region -h -b > /tmp/$newname";
 
