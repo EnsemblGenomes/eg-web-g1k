@@ -27,7 +27,7 @@ sub content {
 
     my $subheader = 'Upload files';    
     my $heading   = 'Variation Pattern Finder';
-    my $regioneg  = '6:46620015-46620998';
+    my $regioneg  = '6:46620015-46620200';
     my ($chr)     = $r ? split /:/, $r : split /:/, $regioneg;
     my ($chreg)   = split /:/, $regioneg;
     my $chr_url   = "LATEST_RELEASE_VCF_$chr";
