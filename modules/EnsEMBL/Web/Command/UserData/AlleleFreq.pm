@@ -146,9 +146,10 @@ sub final_screen {
   unless ($url =~ /^http/ || $url =~ /^ftp:/) {
     $url = ($url =~ /^ftp/) ? "ftp://$url" : "http://$url";
   }
-
+  
+  (my $prefix = $params->{region}) =~ s/[:\.-]/_/g;
   $url =~ m!([^/]+)$!;
-  my $shortname = $1;
+  my $shortname = "${prefix}_$1";
 
   my $index_resp = system ("cd $tmp_dir; tabix -f -h -p vcf $url ".$params->{region}." > $shortname");
   if ($index_resp) {
