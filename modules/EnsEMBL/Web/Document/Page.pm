@@ -62,6 +62,26 @@ sub html_template {
 <body $body_attrs>
   <div id="min_width_container">
     <div id="min_width_holder">
+<!-- redirection banner -->    
+      <style>
+        #redirect-banner {
+          background-color: #3B5F75;
+          padding: 8px 8px 12px 8px;
+          color: white;
+          text-align: center;
+        }
+        #redirect-banner a {
+          color: #79C7E7;
+        }
+        .search_holder {
+          top: 52px !important;
+        }
+      </style>
+      <div id="redirect-banner">
+        This website has been archived.
+        The preferred way to access 1000 Genomes data is via the <a href="http://grch37.ensembl.org">Ensembl GRCh37</a> genome browser.
+      </div>
+<!-- /redirection banner -->         
 <!-- 1kg -->
       <div id="header" class="print_hide">
       <div id="header_line" onclick="location.href='/'">1000 Genomes</div>
