@@ -2,6 +2,25 @@
 
 package EnsEMBL::Web::Document::Page;
 
+sub grch37_url {
+  my $path = shift;
+ 
+  my $rewrite = {
+    '^/tools.*'                           => '"/info/docs/tools/index.html"',
+    '^/info/website/help.*'               => '"/info/index.html"',
+    '^/([^/]+)/UserData/SelectFeatures'   => '"/$1/Tools/AssemblyConverter"',
+    '^/([^/]+)/UserData/UploadStableIDs'  => '"/$1/Tools/IDMapper"',
+    '^/([^/]+)/UserData/UploadVariations' => '"/$1/Tools/VEP"',
+    '^/([^/]+)/UserData/SelectSlice'      => '"/$1/Tools/DataSlicer"',
+    '^/([^/]+)/UserData/VariationsMapVCF' => '"/$1/Tools/VariationPattern"',
+    '^/([^/]+)/UserData/Haploview'        => '"/$1/Tools/VcftoPed"',
+    '^/([^/]+)/UserData/Allele'           => '"/$1/Tools/AlleleFrequency"',
+  };
+
+  $path =~ s/$_/$rewrite->{$_}/ee for (keys %$rewrite);
+  return 'http://grch37.ensembl.org' . $path;
+}
+
 sub html_template {
   ### Main page printing function
   
@@ -27,6 +46,7 @@ sub html_template {
   my $panel_type          = $self->can('panel_type') ? $self->panel_type : '';
   my $main_holder         = $panel_type ? qq(<div id="main_holder" class="js_panel">$panel_type) : '<div id="main_holder">';
   my $here = $ENV{'REQUEST_URI'};
+  my $grch37_url = grch37_url($here);
 
   if ( ($self->isa('EnsEMBL::Web::Document::Page::Fluid') && $here !~ /\/Search\//)
         || ($self->isa('EnsEMBL::Web::Document::Page::Dynamic') && $here =~ /\/Info\//)
@@ -79,7 +99,7 @@ sub html_template {
       </style>
       <div id="redirect-banner">
         This website has been archived.
-        The preferred way to access 1000 Genomes data is via the <a href="http://grch37.ensembl.org">Ensembl GRCh37</a> genome browser.
+        The preferred way to access 1000 Genomes data is via the <a href="$grch37_url">Ensembl GRCh37</a> genome browser.
       </div>
 <!-- /redirection banner -->         
 <!-- 1kg -->
