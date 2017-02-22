@@ -234,10 +234,12 @@ sub content {
    my ($output_ped_, $output_info_);
    my $output_dir = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/slicer';  
 
-   $output_ped_ = "$region.ped";
+   my $time = time;
+
+   $output_ped_ = "$region-$time.ped";
    $output_ped_ =~ s{:}{_};
 
-   $output_info_ = "$region.info";
+   $output_info_ = "$region-$time.info";
    $output_info_ =~ s{:}{_};
 
    my $output_ped = $output_dir . '/' . $output_ped_;
