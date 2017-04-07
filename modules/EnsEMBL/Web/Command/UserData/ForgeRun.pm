@@ -69,24 +69,29 @@ sub process {
   unless ($error) {
       my $fname = $SiteDefs::ENSEMBL_SERVERROOT.'/tmp/user_upload';
 
-      $forge = Bio::Analysis::Forge->new(
-	  {
-	      output => $fname,
+      my $args =    {
+        output => $fname,
         bkgd => $params->{'bkgd'},
         data =>  $params->{'src'},
-	      label => $params->{'name'} || '',
-	      ld  => $params->{'ld'},
-	      tmin  => $params->{'tmin'},
-	      tmax  => $params->{'tmax'},
-	      repetitions => $params->{'reps'},
-	      overlap => $params->{'overlap'},
-	      datadir => $SiteDefs::FORGE_DATA,
-	      dsn => $SiteDefs::FORGE_DSN,
-	      user => $SiteDefs::FORGE_USER,
-	      pass => $SiteDefs::FORGE_PASS,
-	      r_libs => $SiteDefs::R_LIBS
-		  
-	  });
+        label => $params->{'name'} || '',
+        tmin  => $params->{'tmin'},
+        tmax  => $params->{'tmax'},
+        repetitions => $params->{'reps'},
+        overlap => $params->{'overlap'},
+        datadir => $SiteDefs::FORGE_DATA,
+        dsn => $SiteDefs::FORGE_DSN,
+        user => $SiteDefs::FORGE_USER,
+        pass => $SiteDefs::FORGE_PASS,
+        r_libs => $SiteDefs::R_LIBS
+      };
+
+      if ($params->{'ld'}+0 > 0) {
+        $args->{ld} = $params->{'ld'};
+      } else {
+        $args->{nold} = 1;
+      }
+
+      $forge = Bio::Analysis::Forge->new($args);
 
       unless ($forge) {
 	  my $helpdesk = $SiteDefs::ENSEMBL_HELPDESK_EMAIL;
