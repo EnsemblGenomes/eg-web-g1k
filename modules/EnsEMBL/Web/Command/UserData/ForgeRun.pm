@@ -20,7 +20,7 @@ sub process {
   my ($method)           = grep $hub->param($_), qw(file url text);
   my $MIN_SNPS = 5;
 
-  foreach (qw(ls tmin tmax reps ctrls src bkgd name overlap overlap2)) {
+  foreach (qw(ld tmin tmax reps ctrls src bkgd name overlap overlap2)) {
       if ($hub->param($_)) {
 	  $params->{$_} = $hub->param($_);
       }
