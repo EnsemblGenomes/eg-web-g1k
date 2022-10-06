@@ -17,9 +17,9 @@ This browser is based on Ensembl release 73 and represents the variant set analy
 </td>
 </tr>
 
-<td><a href="ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/1000genomes_browser_main_project_20101123/20111013_ensembl_browser_63.doc" target="_blank"><img src="/i/species/48/Homo_sapiens.png" alt="" style="border:1px solid #99c;" /></a></td>
+<td><a href="https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/1000genomes_browser_main_project_20101123/20111013_ensembl_browser_63.doc" target="_blank"><img src="/i/species/48/Homo_sapiens.png" alt="" style="border:1px solid #99c;" /></a></td>
 <td width="90%">
-  <a href="ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/1000genomes_browser_main_project_20110521/The_1000_Genomes_Browser_Tutorial.ensembl_65.doc" target="_blank"><b>Tutorial</b></a> &rarr;<br />
+  <a href="https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/1000genomes_browser_main_project_20110521/The_1000_Genomes_Browser_Tutorial.ensembl_65.doc" target="_blank"><b>Tutorial</b></a> &rarr;<br />
   The 1000 Genomes Browser Tutorial.
 </td>
 </tr>

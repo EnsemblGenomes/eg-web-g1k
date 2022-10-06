@@ -197,7 +197,7 @@ sub _variation_text {
 # 1KG
 #    if ($species_defs->ENSEMBL_FTP_URL) {
 #      my $ftp_url = sprintf '%s/release-%s/variation/gvf/%s/', $species_defs->ENSEMBL_FTP_URL, $ensembl_version, lc $species;
-    my $ftp_url = 'ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/';
+    my $ftp_url = 'https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/';
       $html   .= qq(
 <p><a href="$ftp_url" class="nodeco"><img src="${img_url}24/download.png" alt="" class="homepage-link" />Explore 1000 genomes raw data files</a> (VCF)</p>);
 #    }
